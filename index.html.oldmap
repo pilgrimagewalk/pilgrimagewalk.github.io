@@ -73,40 +73,20 @@
                         </div>
                     </div>
 
-                    <div class="col-md-9">
-                    <div class="ratio ratio-4x3 rounded overflow-hidden border shadow-sm position-relative bg-light">
-                        <img
-                        src="assets/img/map-preview.webp"
-                        alt="Preview of the pilgrimage route map"
-                        class="w-100 h-100"
-                        style="object-fit: cover;"
-                        loading="lazy"
-                        decoding="async">
-
-                        <button
-                        type="button"
-                        class="btn btn-primary position-absolute top-50 start-50 translate-middle px-4 py-2"
-                        id="loadMapBtn"
-                        aria-label="Load interactive map">
-                        Load interactive map
-                        </button>
-                    </div>
-
-                    <div class="ratio ratio-4x3 rounded overflow-hidden border shadow-sm d-none"
-                        id="mapFrameWrap">
-                        <iframe
-                        title="Pilgrimage route map"
-                        id="mapFrame"
-                        data-src="https://www.google.com/maps/d/u/1/embed?mid=129433ybTJqXHOs-b_ZfS3I4_tRbnLVk&ehbc=2E312F"
-                        style="border:0;"
-                        allowfullscreen
-                        loading="lazy"
-                        referrerpolicy="strict-origin-when-cross-origin">
-                        </iframe>
-                    </div>
+                    <div class="col-md-9"> 
+                        <div class="ratio ratio-4x3 rounded overflow-hidden border shadow-sm"> 
+                            <iframe title="Pilgrimage route map" src="https://www.google.com/maps/d/u/1/embed?mid=129433ybTJqXHOs-b_ZfS3I4_tRbnLVk&ehbc=2E312F" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"> 
+                            </iframe> 
+                        </div> 
                     </div>
 
 
+                    <!-- <div class="col-md-9">  -->
+                        <!-- <div class="ratio ratio-4x3 rounded overflow-hidden">  -->
+                            <!-- <iframe src="https://www.google.com/maps/d/u/1/embed?mid=129433ybTJqXHOs-b_ZfS3I4_tRbnLVk&ehbc=2E312F" style="border:0;" allowfullscreen loading="lazy">  -->
+                            <!-- </iframe>  -->
+                        <!-- </div>  -->
+                    <!-- </div> -->
 
                 </div>
             </div>
@@ -348,29 +328,6 @@
 
         <!-- Core theme JS -->
         <!-- <script src="js/scripts.js"></script> -->
-
-        <script>
-        (function () {
-            var btn = document.getElementById('loadMapBtn');
-            var frame = document.getElementById('mapFrame');
-            var frameWrap = document.getElementById('mapFrameWrap');
-
-            if (!btn || !frame || !frameWrap) return;
-
-            btn.addEventListener('click', function () {
-            // swap preview -> iframe
-            var previewWrap = btn.closest('.ratio');
-            if (previewWrap) previewWrap.classList.add('d-none');
-
-            frame.src = frame.getAttribute('data-src');
-            frameWrap.classList.remove('d-none');
-
-            // optional: focus for keyboard users
-            frame.focus();
-            });
-        })();
-        </script>
-
 
     </body>
 </html>

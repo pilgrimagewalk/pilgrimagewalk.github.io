@@ -75,21 +75,24 @@
 
                     <div class="col-md-9">
                     <div class="ratio ratio-4x3 rounded overflow-hidden border shadow-sm position-relative bg-light">
+
                         <img
-                        src="assets/img/map-preview.webp"
+                        src="/assets/img/map-preview.webp"
                         alt="Preview of the pilgrimage route map"
-                        class="w-100 h-100"
+                        class="ratio-item"
                         style="object-fit: cover;"
                         loading="lazy"
                         decoding="async">
 
                         <button
                         type="button"
-                        class="btn btn-primary position-absolute top-50 start-50 translate-middle px-4 py-2"
+                        class="btn btn-primary position-absolute top-50 start-50 translate-middle px-4 py-2 z-2"
                         id="loadMapBtn"
                         aria-label="Load interactive map">
                         Load interactive map
                         </button>
+
+                    </div>
                     </div>
 
                     <div class="ratio ratio-4x3 rounded overflow-hidden border shadow-sm d-none"
@@ -105,8 +108,6 @@
                         </iframe>
                     </div>
                     </div>
-
-
 
                 </div>
             </div>

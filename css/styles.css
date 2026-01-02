@@ -10957,3 +10957,7 @@ img {
 table tr:hover {
     background-color: #faf4e6;
 }
+
+.flag {
+filter: saturate(60%);
+}

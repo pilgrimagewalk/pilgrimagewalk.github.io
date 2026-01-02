@@ -10895,7 +10895,7 @@ header.masthead .masthead-content {
 }
 header.masthead .masthead-content .masthead-heading {
   font-size: 2.4rem;
-  opacity: 0.45;
+  opacity: 0.5;
   margin-bottom: 0;
   line-height: 1;
 }
@@ -10917,15 +10917,6 @@ header.masthead .masthead-content .masthead-subheading {
   }
 }
 
-
-  header.masthead .masthead-content .masthead-heading {
-    font-size: 6rem;
-  }
-
-  header.masthead .masthead-content .masthead-subheading {
-    font-size: 4rem;
-  }
-}
 
 
 

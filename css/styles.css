@@ -10868,19 +10868,19 @@ html {
   letter-spacing: 0.1rem;
 }
 
+
+
+/* hero banner on top */
+
 header.masthead {
   position: relative;
   overflow: hidden;
-  padding-top: calc(7rem + 72px);
-  /* padding-top: calc(7rem + 200px); */
-  padding-bottom: 3rem;
-  /* background: url('../assets/img/masthead2.jpg'); */
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   background: url('../assets/img/01.jpg');
-  /* background: url('../assets/img/pilgrim-fields.jpg'); */
   background-repeat: no-repeat;
-  background-position: centre center;
+  background-position: center center;
   background-attachment: scroll;
-  /* background-size: cover; */
   background-size: cover;
 }
 
@@ -10892,7 +10892,10 @@ header.masthead .masthead-content {
 header.masthead .masthead-content .masthead-heading {
   font-size: 3rem;
   opacity: 0.45;
+  margin-bottom: 0;
+  line-height: 1;
 }
+
 header.masthead .masthead-content .masthead-subheading {
   font-size: 1rem;
   opacity: 0.65;
@@ -10900,16 +10903,22 @@ header.masthead .masthead-content .masthead-subheading {
 
 @media (min-width: 992px) {
   header.masthead {
-    padding-top: calc(5rem + 55px);
-    padding-bottom: 5rem;
+    padding-top: 2rem;
+    padding-bottom: 2.5rem;
   }
+
   header.masthead .masthead-content .masthead-heading {
     font-size: 6rem;
   }
+
   header.masthead .masthead-content .masthead-subheading {
     font-size: 4rem;
   }
 }
+
+
+
+
 
 /* ----------------- */
 /* New changes - gpt */

@@ -10889,8 +10889,12 @@ header.masthead .masthead-content {
   position: relative;
 }
 
+
+header.masthead .masthead-content {
+  text-align: right;
+}
 header.masthead .masthead-content .masthead-heading {
-  font-size: 3rem;
+  font-size: 2.4rem;
   opacity: 0.45;
   margin-bottom: 0;
   line-height: 1;
@@ -10901,11 +10905,18 @@ header.masthead .masthead-content .masthead-subheading {
   opacity: 0.65;
 }
 
+/* @media (min-width: 992px) { */
+  /* header.masthead { */
+    /* padding-top: 2rem; */
+    /* padding-bottom: 2.5rem; */
+  /* } */
+
 @media (min-width: 992px) {
-  header.masthead {
-    padding-top: 2rem;
-    padding-bottom: 2.5rem;
+  header.masthead .masthead-content .masthead-heading {
+    font-size: 4.8rem;
   }
+}
+
 
   header.masthead .masthead-content .masthead-heading {
     font-size: 6rem;

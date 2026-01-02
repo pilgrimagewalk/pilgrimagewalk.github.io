@@ -10894,7 +10894,7 @@ header.masthead .masthead-content {
   text-align: right;
 }
 header.masthead .masthead-content .masthead-heading {
-  font-size: 2.0rem;
+  font-size: 1.0rem;
   opacity: 0.5;
   margin-bottom: 0;
   line-height: 1;
@@ -10908,7 +10908,7 @@ header.masthead .masthead-content .masthead-subheading {
 
 @media (min-width: 992px) {
   header.masthead .masthead-content .masthead-heading {
-    font-size: 4.0rem;
+    font-size: 2.0rem;
   }
 }
 

@@ -10954,12 +10954,14 @@ img {
 }
 
 /* Soft hover effect for table rows */
-table tr:hover {
-    background-color: #faf4e6;
+#shrines .table-hover > tbody > tr:hover > * {
+    background-color: #dbe8ff;
 }
 
 .flag {
 filter: saturate(75%);
+width: 30px;
+height: auto;
 }
 
 
@@ -10972,6 +10974,23 @@ filter: saturate(75%);
 
 #shrines td:first-child a {
     width: auto;
+}
+
+#shrines .table {
+    width: auto;
+    margin: 0 auto;
+}
+
+#shrines td {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+#shrines td:nth-child(2) {
+    padding-right: 0.35rem;
+}
+
+#shrines td:nth-child(3) {
+    padding-left: 0.35rem;
 }
 
 #shrines .table-hover tbody tr {

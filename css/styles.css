@@ -11097,3 +11097,42 @@ height: auto;
     grid-row: span 1;
   }
 }
+
+/* Footer refresh */
+.site-footer {
+  background: linear-gradient(180deg, #1f2328 0%, #171a1e 100%);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.site-footer .footer-title {
+  color: #ffffff;
+  font-size: 1.15rem;
+  letter-spacing: 0.02em;
+  text-shadow: none;
+}
+
+.site-footer .footer-text,
+.site-footer .footer-meta,
+.site-footer .footer-contact {
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.site-footer .footer-contact li {
+  margin-bottom: 0.35rem;
+}
+
+.site-footer a {
+  color: #9fc0ff;
+}
+
+.site-footer a:hover,
+.site-footer a:focus {
+  color: #c2d8ff;
+}
+
+.site-footer .kofi-link img {
+  box-shadow: none;
+  border-radius: 6px;
+}

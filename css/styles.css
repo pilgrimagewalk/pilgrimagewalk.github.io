@@ -10961,3 +10961,19 @@ table tr:hover {
 .flag {
 filter: saturate(75%);
 }
+
+
+#shrines td a {
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+}
+
+#shrines td:first-child a {
+    width: auto;
+}
+
+#shrines .table-hover tbody tr {
+    cursor: pointer;
+}

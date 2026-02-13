@@ -10964,9 +10964,9 @@ img {
 }
 
 .flag {
-filter: saturate(55%);
-width: 30px;
-height: auto;
+  filter: saturate(50%) brightness(120%) contrast(80%);
+  width: 30px;
+  height: auto;
 }
 
 

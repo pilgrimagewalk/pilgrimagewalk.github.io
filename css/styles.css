@@ -10875,8 +10875,8 @@ html {
 header.masthead {
   position: relative;
   overflow: hidden;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   background: url('../assets/img/01.jpg');
   background-repeat: no-repeat;
   background-position: center center;
@@ -10907,6 +10907,11 @@ header.masthead .masthead-content .masthead-subheading {
 
 
 @media (min-width: 992px) {
+  header.masthead {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+
   header.masthead .masthead-content .masthead-heading {
     font-size: 3.0rem;
   }

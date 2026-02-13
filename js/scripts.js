@@ -7,7 +7,20 @@
   ];
 
   function getPreferredLanguage() {
+    var testLanguage = (document.documentElement.getAttribute('data-test-lang') || '').toLowerCase();
+    if (testLanguage) {
+      var testBaseTag = testLanguage.split('-')[0];
+      if (SUPPORTED_LANGUAGES.indexOf(testBaseTag) !== -1) {
+        return testBaseTag;
+      }
+    }
+
     var candidates = [];
+
+    var htmlLanguage = (document.documentElement.lang || '').toLowerCase();
+    if (htmlLanguage) {
+      candidates.push(htmlLanguage);
+    }
 
     if (Array.isArray(navigator.languages) && navigator.languages.length > 0) {
       candidates = candidates.concat(navigator.languages);

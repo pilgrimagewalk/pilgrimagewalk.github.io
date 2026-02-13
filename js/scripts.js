@@ -49,7 +49,14 @@
     elements.forEach(function (element) {
       var key = element.getAttribute('data-i18n');
       if (!key || !Object.prototype.hasOwnProperty.call(dictionary, key)) return;
-      element.textContent = dictionary[key];
+
+      var value = dictionary[key];
+      if (element.getAttribute('data-i18n-lines') === 'words') {
+        element.innerHTML = value.trim().split(/\s+/).join('<br>');
+        return;
+      }
+
+      element.textContent = value;
     });
   }
 

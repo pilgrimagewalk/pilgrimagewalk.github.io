@@ -11011,6 +11011,29 @@ height: auto;
     max-height: 100%;
 }
 
+#shrines .shrines-image-card {
+    margin: 0;
+}
+
+#shrines .shrines-image-card img {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+}
+
+
+@media (min-width: 992px) {
+    #shrines .shrines-lists-col {
+        padding-top: 1.25rem;
+    }
+}
+
+@media (max-width: 991.98px) {
+    #shrines .shrines-map-wrap {
+        position: static;
+    }
+}
+
 /* On the Road collage */
 #on-the-road.on-road-panel {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.4), rgba(250, 245, 236, 0.85));

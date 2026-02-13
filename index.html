@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- Local i18n test helper: temporarily use <html lang="en" data-test-lang="fr"> -->
 <html lang="en">
 
 
@@ -128,13 +129,13 @@
                     </div>
 
                     <div class="col-md-5">
-                            <h3 class="display-4">Pilgrimage</h3>
-                            <p>
+                            <h3 class="display-4" data-i18n="pilgrimage_title">Pilgrimage</h3>
+                            <p data-i18n="pilgrimage_p1">
                             Hi, Enda here... I'm walking
                             around Europe on ancient pilgrim paths 
                             and visiting some Marian shrines along the way.
                             </p>
-                            <p>
+                            <p data-i18n="pilgrimage_p2">
                             I live simply and stay at campsites or pilgrim
                             shelters. While walking along I like to enjoy Nature
                             and dedicate the pilgrimage to all those in
@@ -427,34 +428,7 @@
         <script src="js/bootstrap.bundle.min.js"></script>
 
         <!-- Core theme JS -->
-        <!-- <script src="js/scripts.js"></script> -->
-
-        <script>
-        (function () {
-            var btn = document.getElementById('loadMapBtn');
-            var frame = document.getElementById('mapFrame');
-            var frameWrap = document.getElementById('mapFrameWrap');
-
-            if (!btn || !frame || !frameWrap) return;
-
-            btn.addEventListener('click', function () {
-            // swap preview -> iframe
-            var previewWrap = btn.closest('.ratio');
-            if (previewWrap) previewWrap.classList.add('d-none');
-
-            frame.src = frame.getAttribute('data-src');
-            frameWrap.classList.remove('d-none');
-
-            // optional: focus for keyboard users
-            frame.focus();
-            });
-
-            var year = document.getElementById('currentYear');
-            if (year) {
-            year.textContent = new Date().getFullYear();
-            }
-        })();
-        </script>
+        <script src="js/scripts.js"></script>
 
 
     </body>

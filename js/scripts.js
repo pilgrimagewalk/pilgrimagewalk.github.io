@@ -115,9 +115,21 @@
     }
   }
 
+  function setupKoFiWidget() {
+    if (typeof window.kofiwidget2 === 'undefined') return;
+
+    var labelElement = document.querySelector('[data-i18n="buy_me_a_coffee"]');
+    var label = labelElement ? labelElement.textContent.trim() : 'Buy me a coffee';
+
+    window.kofiwidget2.init(label || 'Buy me a coffee', '#72a4f2', 'V7V01RJ83L');
+    window.kofiwidget2.draw();
+  }
+
   document.addEventListener('DOMContentLoaded', function () {
     setupMapButton();
     setCurrentYear();
-    loadTranslations();
+    loadTranslations().then(function () {
+      setupKoFiWidget();
+    });
   });
 })();

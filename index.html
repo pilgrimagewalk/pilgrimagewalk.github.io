@@ -104,7 +104,7 @@
             </div>
 
             <div
-            class="ratio ratio-4x3 rounded overflow-hidden border shadow-sm d-none"
+            class="ratio ratio-4x3 rounded overflow-hidden border shadow-sm d-none position-relative bg-light"
             id="mapFrameWrap"
             >
             <iframe
@@ -116,6 +116,17 @@
                 loading="lazy"
                 referrerpolicy="strict-origin-when-cross-origin"
             ></iframe>
+
+            <div
+                id="mapLoadingIndicator"
+                class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column align-items-center justify-content-center bg-light"
+                aria-live="polite"
+                aria-label="Loading map"
+                style="z-index: 1;"
+            >
+                <div class="spinner-border text-primary mb-2" role="status" aria-hidden="true"></div>
+                <span>Loading map...</span>
+            </div>
             </div>
 
         </div>

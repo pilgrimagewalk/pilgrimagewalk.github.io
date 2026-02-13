@@ -102,16 +102,27 @@
     var btn = document.getElementById('loadMapBtn');
     var frame = document.getElementById('mapFrame');
     var frameWrap = document.getElementById('mapFrameWrap');
+    var loadingIndicator = document.getElementById('mapLoadingIndicator');
 
     if (!btn || !frame || !frameWrap) return;
+
+    frame.addEventListener('load', function () {
+      if (loadingIndicator) {
+        loadingIndicator.classList.add('d-none');
+      }
+    });
 
     btn.addEventListener('click', function () {
       var previewWrap = btn.closest('.ratio');
       if (previewWrap) previewWrap.classList.add('d-none');
 
+      btn.disabled = true;
       frame.src = frame.getAttribute('data-src');
       frameWrap.classList.remove('d-none');
-      frame.focus();
+
+      if (loadingIndicator) {
+        loadingIndicator.classList.remove('d-none');
+      }
     });
   }
 

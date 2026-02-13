@@ -3,7 +3,8 @@
  */
 (function () {
   var SUPPORTED_LANGUAGES = [
-    'en', 'cs', 'da', 'de', 'el', 'es', 'fr', 'hr', 'hu', 'it', 'lt', 'mt', 'nl', 'pl', 'pt', 'ro', 'sk', 'sl', 'sv', 'uk'
+    'en', 'cs', 'da', 'de', 'el', 'es', 'fr', 'hr', 'hu', 'it', 'lt', 'mt',
+    'nl', 'pl', 'pt', 'ro', 'sk', 'sl', 'sv', 'uk', 'bg'
   ];
 
   function getPreferredLanguage() {

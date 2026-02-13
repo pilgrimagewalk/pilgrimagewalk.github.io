@@ -6,35 +6,7 @@
     'en', 'de', 'es', 'fr', 'hr', 'hu', 'it', 'lt', 'mt', 'nl', 'pl', 'pt', 'ro', 'sk', 'sl', 'uk'
   ];
 
-  function toSupportedBaseLanguage(tag) {
-    var normalizedTag = (tag || '').toLowerCase();
-    if (!normalizedTag) return null;
-
-    var baseTag = normalizedTag.split('-')[0];
-    if (SUPPORTED_LANGUAGES.indexOf(baseTag) !== -1) {
-      return baseTag;
-    }
-
-    return null;
-  }
-
-  function getLanguageOverride() {
-    var urlParams = new URLSearchParams(window.location.search);
-    var queryLang = toSupportedBaseLanguage(urlParams.get('lang'));
-    if (queryLang) return queryLang;
-
-    var htmlAttrLang = toSupportedBaseLanguage(document.documentElement.getAttribute('data-test-lang'));
-    if (htmlAttrLang) return htmlAttrLang;
-
-    return null;
-  }
-
   function getPreferredLanguage() {
-    var overriddenLanguage = getLanguageOverride();
-    if (overriddenLanguage) {
-      return overriddenLanguage;
-    }
-
     var candidates = [];
 
     if (Array.isArray(navigator.languages) && navigator.languages.length > 0) {
@@ -46,9 +18,12 @@
     }
 
     for (var i = 0; i < candidates.length; i += 1) {
-      var supportedLanguage = toSupportedBaseLanguage(candidates[i]);
-      if (supportedLanguage) {
-        return supportedLanguage;
+      var rawTag = (candidates[i] || '').toLowerCase();
+      if (!rawTag) continue;
+
+      var baseTag = rawTag.split('-')[0];
+      if (SUPPORTED_LANGUAGES.indexOf(baseTag) !== -1) {
+        return baseTag;
       }
     }
 

@@ -96,7 +96,19 @@
           applyTranslations(result.dictionary);
           document.documentElement.lang = result.language;
         }
+
+        return result;
       });
+  }
+
+  function setupKofiWidget(dictionary) {
+    if (!window.kofiwidget2 || typeof window.kofiwidget2.init !== 'function') {
+      return;
+    }
+
+    var label = (dictionary && dictionary.buy_me_a_coffee) || 'Buy me a coffee';
+    window.kofiwidget2.init(label, '#72a4f2', 'V7V01RJ83L');
+    window.kofiwidget2.draw();
   }
 
   function setupMapButton() {
@@ -137,6 +149,8 @@
   document.addEventListener('DOMContentLoaded', function () {
     setupMapButton();
     setCurrentYear();
-    loadTranslations();
+    loadTranslations().then(function (result) {
+      setupKofiWidget(result && result.dictionary);
+    });
   });
 })();

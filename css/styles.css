@@ -11199,3 +11199,19 @@ img {
   box-shadow: none;
   border-radius: 6px;
 }
+
+.kofi-link img {
+    transition: filter 0.25s ease, transform 0.15s ease;
+}
+
+.kofi-link:hover img {
+    filter:
+        brightness(0.9)
+        contrast(1.2)
+        saturate(2)
+        sepia(1)
+        hue-rotate(190deg)
+        drop-shadow(0 0 6px #00aaff)
+        drop-shadow(0 0 16px #0088ff);
+    transform: scale(1.05);
+}

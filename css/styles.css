@@ -11017,15 +11017,16 @@ height: auto;
 
 #shrines .shrines-image-card img {
     width: 100%;
-    height: auto;
-    aspect-ratio: auto;
+    /* height: auto; */
+    height: 80%;
+    /* aspect-ratio: auto; */
     object-fit: contain;
 }
 
 
 @media (min-width: 992px) {
     #shrines .shrines-lists-col {
-        padding-top: 1.25rem;
+        padding-top: 2.25rem;
     }
 
     #shrines .shrines-image-card img {

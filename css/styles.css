@@ -11027,6 +11027,13 @@ height: auto;
     #shrines .shrines-lists-col {
         padding-top: 1.25rem;
     }
+
+    #shrines .shrines-image-card img {
+        max-height: 32rem;
+        width: auto;
+        margin-inline: auto;
+        display: block;
+    }
 }
 
 @media (max-width: 991.98px) {

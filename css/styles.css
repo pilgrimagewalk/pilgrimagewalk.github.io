@@ -10997,6 +10997,10 @@ img {
     padding-right: 0.35rem;
 }
 
+#shrines td:nth-child(2) a {
+    font-size: 0.72rem;
+}
+
 #shrines td:nth-child(3) {
     padding-left: 0.35rem;
 }

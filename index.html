@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+
+<!-- Local i18n test helper: 
+    temporarily use <html lang="en" data-test-lang="fr"> 
+    'en', 'cs', 'da', 'de', 'el', 'es', 'fr', 'hr', 'hu', 'it', 'lt', 'mt', 'nl', 'pl', 'pt', 'ro', 'sk', 'sl', 'sv', 'uk'
+-->
+
+<!-- <html lang="en"  data-test-lang="pl"> -->
+<!-- <html lang="en"  data-test-lang="es"> -->
+<!-- <html lang="en"  data-test-lang="lt"> -->
+<!-- <html lang="en"  data-test-lang="ro"> -->
+<!-- <html lang="en"  data-test-lang="de"> -->
+
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <link rel="canonical" href="https://pilgrimagewalk.eu/">
+        <meta name="author" content="Enda F" />
+        <meta name="description" content="A personal walking pilgrimage across
+        Europe, visiting the great Marian shrines along ancient pilgrim paths." />
+
+        <title>European Pilgrimage</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+
+        <!-- Fontello icon font CSS -->
+        <link href="css/fontello.css" rel="stylesheet">
+
+        <!-- table styling -->
+        <style>
+            table {
+                width: 100%;
+            }
+            th, td {
+                text-align: left;
+                padding: 8px;
+            }
+
+            .table td a {
+            font-size: 0.85em;
+            }
+
+            #shrines .table {
+            font-size: 0.8em;
+            }
+        </style>
+
+    </head>
+
+
+    <body id="page-top">
+
+        <header class="masthead text-left text-white">
+
+            <div class="masthead-content">
+                <div class="container px-2">
+                    <h2 class="masthead-heading mb-0" data-i18n="masthead_title" data-i18n-lines="words">European Walking Pilgrimage</h2>
+                </div>
+            </div>
+
+        </header>
+
+        <section id="About">
+        <div class="container p-5">
+        <div class="row gx-4 align-items-center">
+
+
+        <div class="col-md-3">
+            <div class="p-1">
+            <img class="img-fluid rounded-circle" src="/assets/img/02.jpg" alt="Portrait" />
+            </div>
+        </div>
+
+        <div class="col-md-9">
+            <div class="ratio ratio-4x3 rounded overflow-hidden border shadow-sm position-relative bg-light">
+            <img
+                src="/assets/img/map-preview.jpg"
+                alt="Preview of the pilgrimage route map"
+                class="ratio-item"
+                style="object-fit: cover;"
+                loading="lazy"
+                decoding="async"
+            >
+
+            <div
+                class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
+                style="background: transparent; z-index: 2;"
+            >
+                <button
+                type="button"
+                class="btn btn-primary px-4 py-2"
+                id="loadMapBtn"
+                data-i18n="view_current_location"
+                aria-label="View current location"
+                style="width: auto; height: auto;"
+                >
+                View Current Location
+                </button>
+            </div>
+            </div>
+
+            <div
+            class="ratio ratio-4x3 rounded overflow-hidden border shadow-sm d-none position-relative bg-light"
+            id="mapFrameWrap"
+            >
+            <iframe
+                title="Pilgrimage route map"
+                id="mapFrame"
+                data-src="https://www.google.com/maps/d/u/1/embed?mid=129433ybTJqXHOs-b_ZfS3I4_tRbnLVk&ehbc=2E312F"
+                style="border:0;"
+                allowfullscreen
+                loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"
+            ></iframe>
+
+            <div
+                id="mapLoadingIndicator"
+                class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column align-items-center justify-content-center bg-light"
+                aria-live="polite"
+                aria-label="Loading map"
+                style="z-index: 1;"
+            >
+                <div class="spinner-border text-primary mb-2" role="status" aria-hidden="true"></div>
+                <span>Loading map...</span>
+            </div>
+            </div>
+
+        </div>
+        </div>
+        </div>
+        </section>
+
+
+
+        <section id="Background">
+            <div class="container p-3">
+                <div class="row gx-5 align-items-center">
+
+                    <div class="col-md-7">
+                        <div class="p-1"><img class="img-fluid rounded" src="assets/img/shrine.webp" alt="..." /></div>
+                    </div>
+
+                    <div class="col-md-5">
+                            <h3 class="display-4" data-i18n="pilgrimage_title">Pilgrimage</h3>
+                            <p data-i18n="pilgrimage_p1"> </p>
+                            <p data-i18n="pilgrimage_p2"> </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section id="walking">
+        <div class="container pb-2">
+
+            <div class="row gx-3">
+            <div class="col-md-4">
+                <div class="ratio ratio-1x1 mb-3" style="margin-top: 0.5rem;">
+                <img
+                    src="assets/img/walking-1.jpg"
+                    alt="Walking pilgrimage view"
+                    class="img-fluid rounded shadow"
+                    style="object-fit: cover;"
+                />
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="ratio ratio-1x1 mb-3" style="margin-top: 0.5rem;">
+                <img
+                    src="assets/img/walking-4-old.jpg"
+                    alt="Pilgrim route scene"
+                    class="img-fluid rounded shadow"
+                    style="object-fit: cover;"
+                />
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="ratio ratio-1x1 mb-3" style="margin-top: 0.5rem;">
+                <img
+                    src="assets/img/walking-3.jpg"
+                    alt="Pilgrimage on the road"
+                    class="img-fluid rounded shadow"
+                    style="object-fit: cover;"
+                />
+                </div>
+            </div>
+            </div>
+        </div>
+        </section>
+
+
+        <section id="shrines" >
+            <div class="container p-5">
+                <h2 class="display-4 text-center mb-5" data-i18n="european_marian_network_heading">European Marian Network</h2>
+
+                <div class="row g-4 align-items-start">
+                    <div class="col-lg-5">
+                        <a href="https://www.pilgrim-info.com/european-marian-network-pilgrimages/" target="_blank" rel="noopener">
+                            <!-- <img class="img-fluid rounded shadow-sm" src="assets/img/Network.jpg" alt="European Marian Network map" loading="lazy" decoding="async" /> -->
+                            <img class="img-fluid rounded shadow-sm" src="assets/img/Marian-network.jpg" alt="European Marian Network map" loading="lazy" decoding="async" />
+                        </a>
+                    </div>
+
+                    <div class="col-lg-7 shrines-lists-col">
+                        <div class="row g-3">
+                    <div class="col-md-4">
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <tbody>
+                                    <tr><td><a href="https://www.knockshrine.ie/" target="_blank"><img class="flag" src="assets/img/flags/ie.webp" alt="Ireland Flag" width="40" height="30"></a></td><td><a href="https://www.knockshrine.ie/" target="_blank">Knock</a></td></tr>
+                                    <tr><td><a href="https://www.walsingham.org.uk" target="_blank"><img class="flag" src="assets/img/flags/gb.webp" alt="UK Flag" width="40" height="30"></a></td><td><a href="https://www.walsingham.org.uk" target="_blank">Walsingham</a></td></tr>
+                                    <tr><td><a href="https://www.banneux-nd.be" target="_blank"><img class="flag" src="assets/img/flags/be.webp" alt="Belgium Flag" width="40" height="30"></a></td><td><a href="https://www.banneux-nd.be" target="_blank">Banneux</a></td></tr>
+                                    <tr><td><a href="https://www.lourdes-france.org" target="_blank"><img class="flag" src="assets/img/flags/fr.webp" alt="France Flag" width="40" height="30"></a></td><td><a href="https://www.lourdes-france.org" target="_blank">Lourdes</a></td></tr>
+                                    <tr><td><a href="https://www.basilicadelpilar.es" target="_blank"><img class="flag" src="assets/img/flags/es.webp" alt="Spain Flag" width="40" height="30"></a></td><td><a href="https://www.basilicadelpilar.es" target="_blank">Zaragoza</a></td></tr>
+                                    <tr><td><a href="https://www.fatima.pt" target="_blank"><img class="flag" src="assets/img/flags/pt.webp" alt="Portugal Flag" width="40" height="30"></a></td><td><a href="https://www.fatima.pt" target="_blank">Fátima</a></td></tr>
+                                    <tr><td><a href="https://www.ourladyofeurope.net" target="_blank"><img class="flag" src="assets/img/flags/gi.webp" alt="Gibraltar Flag" width="40" height="30"></a></td><td><a href="https://www.ourladyofeurope.net" target="_blank">Gibraltar</a></td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <tbody>
+                                    <tr><td><a href="https://www.santuarioloreto.va/it.html" target="_blank"><img class="flag" src="assets/img/flags/it.webp" alt="Italy Flag" width="40" height="30"></a></td><td><a href="https://www.santuarioloreto.va/it.html" target="_blank">Loreto</a></td></tr>
+                                    <tr><td><a href="https://www.mellieha.com" target="_blank"><img class="flag" src="assets/img/flags/mt.webp" alt="Malta Flag" width="40" height="30"></a></td><td><a href="https://www.mellieha.com" target="_blank">Mellieħa</a></td></tr>
+                                    <tr><td><a href="https://www.kloster-einsiedeln.ch" target="_blank"><img class="flag" src="assets/img/flags/ch.webp" alt="Switzerland Flag" width="40" height="30"></a></td><td><a href="https://www.kloster-einsiedeln.ch" target="_blank">Einsiedeln</a></td></tr>
+                                    <tr><td><a href="https://www.gnadenort-altoetting.de/" target="_blank"><img class="flag" src="assets/img/flags/de.webp" alt="Germany Flag" width="40" height="30"></a></td><td><a href="https://www.gnadenort-altoetting.de/" target="_blank">Altötting</a></td></tr>
+                                    <tr><td><a href="https://www.basilika-mariazell.at" target="_blank"><img class="flag" src="assets/img/flags/at.webp" alt="Austria Flag" width="40" height="30"></a></td><td><a href="https://www.basilika-mariazell.at" target="_blank">Mariazell</a></td></tr>
+                                    <tr><td><a href="https://www.marija.si" target="_blank"><img class="flag" src="assets/img/flags/si.webp" alt="Slovenia Flag" width="40" height="30"></a></td><td><a href="https://www.marija.si" target="_blank">Brezje</a></td></tr>
+                                    <tr><td><a href="https://www.marija-bistrica.hr" target="_blank"><img class="flag" src="assets/img/flags/hr.webp" alt="Croatia Flag" width="40" height="30"></a></td><td><a href="https://www.marija-bistrica.hr" target="_blank">Marija Bistrica</a></td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <tbody>
+                                    <tr><td><a href="https://www.bucsujaras.hu/mariapocs" target="_blank"><img class="flag" src="assets/img/flags/hu.webp" alt="Hungary Flag" width="40" height="30"></a></td><td><a href="https://www.bucsujaras.hu/mariapocs" target="_blank">Máriapócs</a></td></tr>
+                                    <tr><td><a href="https://szentkut.hu" target="_blank"><img class="flag" src="assets/img/flags/hu.webp" alt="Hungary Flag" width="40" height="30"></a></td><td><a href="https://szentkut.hu" target="_blank">Mátraverebély</a></td></tr>
+                                    <tr><td><a href="https://www.levoca.sk" target="_blank"><img class="flag" src="assets/img/flags/sk.webp" alt="Slovakia Flag" width="40" height="30"></a></td><td><a href="https://www.levoca.sk" target="_blank">Levoča</a></td></tr>
+                                    <tr><td><a href="https://www.csiksomlyo.ro" target="_blank"><img class="flag" src="assets/img/flags/ro.webp" alt="Romania Flag" width="40" height="30"></a></td><td><a href="https://www.csiksomlyo.ro" target="_blank">Csíksomlyó</a></td></tr>
+                                    <tr><td><a href="https://www.jasnagora.pl" target="_blank"><img class="flag" src="assets/img/flags/pl.webp" alt="Poland Flag" width="40" height="30"></a></td><td><a href="https://www.jasnagora.pl" target="_blank">Częstochowa</a></td></tr>
+                                    <tr><td><a href="https://www.ausrosvartai.lt" target="_blank"><img class="flag" src="assets/img/flags/lt.webp" alt="Lithuania Flag" width="40" height="30"></a></td><td><a href="https://www.ausrosvartai.lt" target="_blank">Vilnius</a></td></tr>
+                                    <tr><td><a href="https://en.wikipedia.org/wiki/Zarvanytsia" target="_blank"><img class="flag" src="assets/img/flags/ua.webp" alt="Ukraine Flag" width="40" height="30"></a></td><td><a href="https://en.wikipedia.org/wiki/Zarvanytsia" target="_blank">Zarvanytsia</a></td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="on-the-road" class="on-road-panel py-5">
+            <div class="container">
+                <h2 class="display-4 text-center mb-5" data-i18n="on_the_road_heading">On the Road</h2>
+                <div class="on-road-collage" aria-label="Collage of pilgrimage photos from the road">
+                    <figure class="collage-item">
+                        <img src="assets/img/Pilgrim-1-2024.jpg" alt="Pilgrim photo from 2024" loading="lazy" decoding="async" />
+                    </figure>
+                    <figure class="collage-item">
+                        <img src="assets/img/logo-franci.jpg" alt="Via Francigena logo" loading="lazy" decoding="async" />
+                    </figure>
+
+                    <figure class="collage-item wide">
+                        <img src="assets/img/Francigena.jpg" alt="Francigena route view" loading="lazy" decoding="async" />
+                    </figure>
+                    <figure class="collage-item big">
+                        <img src="assets/img/jasna-gora-2021.jpg" alt="Poland" loading="lazy" decoding="async" />
+                    </figure>
+                    <figure class="collage-item">
+                        <img src="assets/img/Labre-Monaghan.jpg" alt="Labre-Monaghan pilgrimage moment" loading="lazy" decoding="async" />
+                    </figure>
+                    <figure class="collage-item">
+                        <img src="assets/img/butterfly.jpg" alt="Butterfly seen on the road" loading="lazy" decoding="async" />
+                    </figure>
+
+                    <figure class="collage-item wide">
+                        <img src="assets/img/Shrines1.jpg" alt="Shrines visited during the pilgrimage" loading="lazy" decoding="async" />
+                    </figure>
+                    <figure class="collage-item">
+                        <img src="assets/img/logo-Camino.jpg" alt="Camino logo" loading="lazy" decoding="async" />
+                    </figure>
+
+                    <figure class="collage-item">
+                        <img src="assets/img/camino3.webp" alt="Camino route sign" loading="lazy" decoding="async" />
+                    </figure>
+
+
+
+                    <figure class="collage-item tall">
+                        <img src="assets/img/Benedict2.webp" alt="Pilgrim portrait on the journey" loading="lazy" decoding="async" />
+                    </figure>
+                    <figure class="collage-item tall">
+                        <img src="assets/img/cycle-to-Poland-camino-sign.jpg" alt="Camino sign on route to Poland" loading="lazy" decoding="async" />
+                    </figure>
+
+                    <figure class="collage-item wide">
+                        <img src="assets/img/dreams.webp" alt="dreams" loading="lazy" decoding="async" />
+                    </figure>
+                        
+
+                    <figure class="collage-item">
+                        <img src="assets/img/camp.jpg" alt="Pilgrim campsite" loading="lazy" decoding="async" />
+                    </figure>
+                    <figure class="collage-item">
+                        <img src="assets/img/Pilgrim-2-2024.jpg" alt="Second pilgrim photo from 2024" loading="lazy" decoding="async" />
+                    </figure>
+                    <figure class="collage-item wide">
+                        <img src="assets/img/pilgrim-fields.jpg" alt="Pilgrim walking through fields" loading="lazy" decoding="async" />
+                    </figure>
+
+
+                </div>
+            </div>
+        </section>
+
+
+
+        <footer class="site-footer py-5 bg-dark">
+            <div class="container px-4 px-lg-5">
+                <div class="row g-4 align-items-start">
+                    <div class="col-md-7">
+                        <h5 class="footer-title mb-2" data-i18n="masthead_title">European Pilgrimage</h5>
+                        <p class="footer-text mb-2" data-i18n="footer_tagline">Walking ancient paths & visiting Marian shrines</p>
+                        <p class="footer-meta mb-0">&copy; <span id="currentYear">2024</span> Enda F</p>
+                    </div>
+
+                    <div class="col-md-5">
+                        <ul class="footer-contact list-unstyled mb-3">
+                            <li><strong>Email:</strong> <a href="mailto:europilgrimage@gmx.com">europilgrimage@gmx.com</a></li>
+                        </ul>
+
+                        <script type='text/javascript' 
+                            src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'>
+                        </script>
+                        <script type='text/javascript'>
+                            (function () {
+                                var labels = {
+                                    en: 'Buy me a coffee',
+                                    cs: 'Kup mi kávu',
+                                    da: 'Køb mig en kaffe',
+                                    de: 'Kauf mir einen Kaffee',
+                                    el: 'Κέρασέ με έναν καφέ',
+                                    es: 'Cómprame un café',
+                                    fr: 'Offre-moi un café',
+                                    hr: 'Kupi mi kavu',
+                                    hu: 'Vegyél nekem egy kávét',
+                                    it: 'Offrimi un caffè',
+                                    lt: 'Nupirk man kavos',
+                                    mt: 'Ixtrili kafè',
+                                    nl: 'Koop een koffie voor me',
+                                    pl: 'Postaw mi kawę',
+                                    pt: 'Paga-me um café',
+                                    ro: 'Cumpără-mi o cafea',
+                                    sk: 'Kúp mi kávu',
+                                    sl: 'Kupi mi kavo',
+                                    sv: 'Bjud mig på en kaffe',
+                                    uk: 'Купи мені каву'
+                                };
+
+                                var langTag = (
+                                    document.documentElement.getAttribute('data-test-lang') ||
+                                    navigator.language ||
+                                    document.documentElement.lang ||
+                                    'en'
+                                ).toLowerCase();
+                                var lang = langTag.split('-')[0];
+                                var label = labels[lang] || labels.en;
+
+                                kofiwidget2.init(label, '#72a4f2', 'V7V01RJ83L');
+                                kofiwidget2.draw();
+                            })();
+                        </script>
+
+
+                        <!-- <a href="https://ko-fi.com/V7V01RJ83L" target="_blank" rel="noopener noreferrer" class="kofi-link" aria-label="Support on Ko-fi"> -->
+                            <!-- <img src="https://storage.ko-fi.com/cdn/kofi5.png?v=6" alt="Buy Me a Coffee at ko-fi.com" height="36" /> -->
+                        <!-- </a> -->
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap core JS -->
+        <script src="js/bootstrap.bundle.min.js"></script>
+
+        <!-- Core theme JS -->
+        <script src="js/scripts.js"></script>
+
+
+    </body>
+</html>

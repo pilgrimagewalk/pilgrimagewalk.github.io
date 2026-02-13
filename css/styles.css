@@ -11064,7 +11064,10 @@ height: auto;
   }
 }
 
-#shrines .shrines-map-col, #shrines .shrines-lists-col { outline: 2px solid red; }
+#shrines .shrines-lists-col {
+  padding-top: 1.5rem;   /* adjust to taste */
+}
+
 
 /* On the Road collage */
 #on-the-road.on-road-panel {

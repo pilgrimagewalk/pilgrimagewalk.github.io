@@ -11017,9 +11017,8 @@ height: auto;
 
 #shrines .shrines-image-card img {
     width: 100%;
-    /* height: auto; */
-    height: 80%;
-    /* aspect-ratio: auto; */
+    height: auto;
+    aspect-ratio: auto;
     object-fit: contain;
 }
 

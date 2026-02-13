@@ -435,8 +435,8 @@
 
                                 var langTag = (
                                     document.documentElement.getAttribute('data-test-lang') ||
-                                    document.documentElement.lang ||
                                     navigator.language ||
+                                    document.documentElement.lang ||
                                     'en'
                                 ).toLowerCase();
                                 var lang = langTag.split('-')[0];

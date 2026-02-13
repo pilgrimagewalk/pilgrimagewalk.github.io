@@ -17,17 +17,17 @@
 
     var candidates = [];
 
-    var htmlLanguage = (document.documentElement.lang || '').toLowerCase();
-    if (htmlLanguage) {
-      candidates.push(htmlLanguage);
-    }
-
     if (Array.isArray(navigator.languages) && navigator.languages.length > 0) {
       candidates = candidates.concat(navigator.languages);
     }
 
     if (navigator.language) {
       candidates.push(navigator.language);
+    }
+
+    var htmlLanguage = (document.documentElement.lang || '').toLowerCase();
+    if (htmlLanguage) {
+      candidates.push(htmlLanguage);
     }
 
     for (var i = 0; i < candidates.length; i += 1) {

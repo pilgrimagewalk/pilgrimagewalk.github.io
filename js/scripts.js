@@ -101,14 +101,22 @@
       });
   }
 
-  function setupKofiWidget(dictionary) {
-    if (!window.kofiwidget2 || typeof window.kofiwidget2.init !== 'function') {
-      return;
-    }
-
+  function updateKofiWidgetLabel(dictionary) {
     var label = (dictionary && dictionary.buy_me_a_coffee) || 'Buy me a coffee';
-    window.kofiwidget2.init(label, '#72a4f2', 'V7V01RJ83L');
-    window.kofiwidget2.draw();
+
+    var kofiLinks = document.querySelectorAll('a[href*="ko-fi.com"], a[href*="ko-fi.com"] *');
+    kofiLinks.forEach(function (node) {
+      if (node.nodeType !== Node.ELEMENT_NODE) return;
+      if (node.childElementCount === 0 && node.textContent && node.textContent.trim()) {
+        node.textContent = label;
+      }
+      if (node.hasAttribute('aria-label')) {
+        node.setAttribute('aria-label', label);
+      }
+      if (node.hasAttribute('title')) {
+        node.setAttribute('title', label);
+      }
+    });
   }
 
   function setupMapButton() {
@@ -150,7 +158,7 @@
     setupMapButton();
     setCurrentYear();
     loadTranslations().then(function (result) {
-      setupKofiWidget(result && result.dictionary);
+      updateKofiWidgetLabel(result && result.dictionary);
     });
   });
 })();

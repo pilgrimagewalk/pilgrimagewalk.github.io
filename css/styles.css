@@ -11199,23 +11199,30 @@ img {
   color: #c2d8ff;
 }
 
-.site-footer .kofi-link img {
-  box-shadow: none;
-  border-radius: 6px;
+.kofi-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  background: linear-gradient(180deg, #4cc7f5 0%, #29abe0 100%);
+  border: 1px solid #1c97ca;
+  color: #ffffff;
+  font-weight: 600;
+  line-height: 1;
+  padding: 0.55rem 1.1rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  transition: transform 0.15s ease, box-shadow 0.2s ease, filter 0.2s ease;
 }
 
-.kofi-link img {
-    transition: filter 0.25s ease, transform 0.15s ease;
+.kofi-link .kofi-icon {
+  font-size: 0.95rem;
 }
 
-.kofi-link:hover img {
-    filter:
-        brightness(0.9)
-        contrast(1.2)
-        saturate(2)
-        sepia(1)
-        hue-rotate(190deg)
-        drop-shadow(0 0 6px #00aaff)
-        drop-shadow(0 0 16px #0088ff);
-    transform: scale(1.05);
+.kofi-link:hover,
+.kofi-link:focus {
+  color: #ffffff;
+  filter: brightness(1.04);
+  transform: translateY(-1px);
+  box-shadow: 0 5px 12px rgba(41, 171, 224, 0.35);
+  text-decoration: none;
 }

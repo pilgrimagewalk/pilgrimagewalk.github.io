@@ -119,6 +119,18 @@
     });
   }
 
+  function initKofiWidget(dictionary) {
+    var label = (dictionary && dictionary.buy_me_a_coffee) || 'Buy me a coffee';
+
+    if (!window.kofiwidget2 || typeof window.kofiwidget2.init !== 'function') {
+      return false;
+    }
+
+    window.kofiwidget2.init(label, '#72a4f2', 'V7V01RJ83L');
+    window.kofiwidget2.draw();
+    return true;
+  }
+
   function setupMapButton() {
     var btn = document.getElementById('loadMapBtn');
     var frame = document.getElementById('mapFrame');
@@ -158,7 +170,12 @@
     setupMapButton();
     setCurrentYear();
     loadTranslations().then(function (result) {
+      initKofiWidget(result && result.dictionary);
       updateKofiWidgetLabel(result && result.dictionary);
+
+      setTimeout(function () {
+        updateKofiWidgetLabel(result && result.dictionary);
+      }, 300);
     });
   });
 })();

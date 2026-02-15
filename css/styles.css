@@ -11215,7 +11215,8 @@ img {
   align-items: center;
   gap: 0.45rem;
   /* softer, muted blue gradient */
-  background: linear-gradient(180deg, #9fc2cf 0%, #7ea9b8 100%);
+  /* background: linear-gradient(180deg, #9fc2cf 0%, #7ea9b8 100%); */
+    background: linear-gradient(180deg, #4cc7f5 0%, #29abe0 100%);
   border: 1px solid #6f97a5;
   /* slightly softer text color */
   color: #1f3f49 !important;

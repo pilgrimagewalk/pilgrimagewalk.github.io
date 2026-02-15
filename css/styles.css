@@ -11074,7 +11074,8 @@ img {
 }
 
 #shrines .shrines-lists-col {
-  padding-top: 1.5rem;   /* adjust to taste */
+  /* padding-top: 1.5rem;   */
+  padding-top: 0;   
 }
 
 

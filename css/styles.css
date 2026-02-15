@@ -11226,7 +11226,8 @@ img {
 }
 
 .kofi-link .kofi-icon {
-  font-size: 0.95rem;
+  /* font-size: 0.95rem; */
+  font-size: 1.25rem;
 }
 
 .kofi-link:hover {

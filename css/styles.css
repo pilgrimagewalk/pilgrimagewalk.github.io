@@ -11214,20 +11214,38 @@ img {
   display: inline-flex;
   align-items: center;
   gap: 0.45rem;
-  background: linear-gradient(180deg, #4cc7f5 0%, #29abe0 100%);
-  border: 1px solid #1c97ca;
-  color: #114a5c !important;
+  /* softer, muted blue gradient */
+  background: linear-gradient(180deg, #9fc2cf 0%, #7ea9b8 100%);
+  border: 1px solid #6f97a5;
+  /* slightly softer text color */
+  color: #1f3f49 !important;
   font-weight: 600;
   line-height: 1;
   padding: 0.55rem 1.1rem;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  /* softer shadow */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.16);
   text-decoration: none;
   transition: transform 0.15s ease, box-shadow 0.2s ease, filter 0.2s ease;
 }
 
+/* .kofi-link { */
+  /* display: inline-flex; */
+  /* align-items: center; */
+  /* gap: 0.45rem; */
+  /* background: linear-gradient(180deg, #4cc7f5 0%, #29abe0 100%); */
+  /* border: 1px solid #1c97ca; */
+  /* color: #114a5c !important; */
+  /* font-weight: 600; */
+  /* line-height: 1; */
+  /* padding: 0.55rem 1.1rem; */
+  /* box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); */
+  /* text-decoration: none; */
+  /* transition: transform 0.15s ease, box-shadow 0.2s ease, filter 0.2s ease; */
+/* } */
+
 .kofi-link .kofi-icon {
   /* font-size: 0.95rem; */
-  font-size: 1.25rem;
+  font-size: 1.20rem;
 }
 
 .kofi-link:hover {

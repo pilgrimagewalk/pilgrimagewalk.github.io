@@ -11205,7 +11205,7 @@ img {
   gap: 0.45rem;
   background: linear-gradient(180deg, #4cc7f5 0%, #29abe0 100%);
   border: 1px solid #1c97ca;
-  color: #ffffff;
+  color: #114a5c !important;
   font-weight: 600;
   line-height: 1;
   padding: 0.55rem 1.1rem;
@@ -11218,11 +11218,22 @@ img {
   font-size: 0.95rem;
 }
 
-.kofi-link:hover,
-.kofi-link:focus {
-  color: #ffffff;
-  filter: brightness(1.04);
+.kofi-link:hover {
+  color: #f2fbff !important;
+  filter: brightness(1.02);
   transform: translateY(-1px);
   box-shadow: 0 5px 12px rgba(41, 171, 224, 0.35);
   text-decoration: none;
+}
+
+/* Keyboard users only (Tab key) */
+.kofi-link:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.65);
+  outline-offset: 3px;
+  text-decoration: none;
+}
+
+/* Optional: avoid Firefox “sticky focus” visual */
+.kofi-link:focus:not(:focus-visible) {
+  outline: none;
 }

@@ -11258,7 +11258,8 @@ img {
 /* } */
 
 .earthy-img {
-  filter: sepia(1);
+  /* filter: sepia(1); */
+  filter: grayscale(100%);
 }
 
 /* very hacky: down in the footer I want some spaces after data-i18n="support_title" */

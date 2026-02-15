@@ -163,7 +163,7 @@
                 <div class="row gx-5 align-items-center">
 
                     <div class="col-md-7">
-                        <div class="p-1"><img class="img-fluid rounded" src="assets/img/shrine.webp" alt="..." /></div>
+                        <div class="p-1"><img class="img-fluid rounded earthy-img" src="assets/img/shrine.webp" alt="..." /></div>
                     </div>
 
                     <div class="col-md-5">
@@ -179,14 +179,13 @@
 
         <section id="walking">
         <div class="container pb-2">
-
             <div class="row gx-3">
             <div class="col-md-4">
                 <div class="ratio ratio-1x1 mb-3" style="margin-top: 0.5rem;">
                 <img
                     src="assets/img/walking-1.jpg"
                     alt="Walking pilgrimage view"
-                    class="img-fluid rounded shadow"
+                    class="img-fluid rounded shadow earthy-img"
                     style="object-fit: cover;"
                 />
                 </div>
@@ -196,7 +195,7 @@
                 <img
                     src="assets/img/walking-4-old.jpg"
                     alt="Pilgrim route scene"
-                    class="img-fluid rounded shadow"
+                    class="img-fluid rounded shadow earthy-img"
                     style="object-fit: cover;"
                 />
                 </div>
@@ -206,7 +205,7 @@
                 <img
                     src="assets/img/walking-3.jpg"
                     alt="Pilgrimage on the road"
-                    class="img-fluid rounded shadow"
+                    class="img-fluid rounded shadow earthy-img"
                     style="object-fit: cover;"
                 />
                 </div>
@@ -320,8 +319,9 @@
                     <style>
                         /* default: force nearly full color for this one image */
                         #kofi-card img {
-                        filter: grayscale(80%) !important;
-                        transition: filter 0.35s ease;
+                        filter: grayscale(100%) !important;
+                        /* transition: filter 0.35s ease; */
+                        transition: filter 0.08s ease !important;
                         }
                         /* hover/focus: only 50% grayscale (i.e., partial color) */
                         #kofi-card a:hover img,
@@ -372,8 +372,7 @@
             <div class="row g-4 align-items-start">
 
             <!-- revolut QR -->
-            <!-- <div class="col-12 col-md-3 text-md-end"> -->
-            <div class="col-md-2 ">
+            <div class="col-md-2 text-md-end">
                 <a href="https://revolut.me/farrelle"
                 target="_blank" rel="noopener noreferrer"
                 class="revolut-link"
@@ -387,7 +386,7 @@
 
 
             <!-- tagline -->
-            <div class="col-md-5">
+            <div class="col-md-7 text-md-left">
                 <p class="footer-title mb-2" data-i18n="masthead_title">European Pilgrimage</p>
                 <p class="footer-text mb-2" data-i18n="footer_tagline">Walking ancient paths &amp; visiting Marian shrines</p>
                 <p class="footer-meta mb-1">
@@ -396,16 +395,19 @@
             </div>
 
             <!-- kofi -->
-            <div class="col-md-5 text-md-center">
+
+            <div class="col-md-3 text-md-end">
                 <p class="footer-title mb-2" data-i18n="support_title">Support</p>
                 <a href="https://ko-fi.com/V7V01RJ83L"
                 target="_blank" rel="noopener noreferrer"
-                class="btn kofi-link rounded-pill"
+                class="kofi-link rounded-pill"
                 aria-label="Support via Ko-fi">
                 <span class="kofi-icon" aria-hidden="true">☕</span>
                 <span data-i18n="buy_me_a_coffee">Buy me a coffee</span>
                 </a>
             </div>
+
+
 
 
         </div>

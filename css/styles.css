@@ -11248,3 +11248,41 @@ img {
 .kofi-link:focus:not(:focus-visible) {
   outline: none;
 }
+
+.revolut-link {
+  display: inline-block;
+  line-height: 0; /* removes tiny baseline gap under images */
+  text-decoration: none;
+  transition: transform 0.15s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+
+.revolut-qr {
+  display: block;
+  width: 70%;
+  max-width: 170px;  /* tweak size here */
+  /* height: auto; */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover/active feel similar to kofi-link */
+.revolut-link:hover {
+  filter: brightness(1.06);
+  transform: translateY(-1px);
+}
+
+.revolut-link:hover .revolut-qr {
+  box-shadow: 0 5px 12px rgba(255, 255, 255, 0.12);
+}
+
+/* Keyboard users (Tab key) */
+.revolut-link:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.65);
+  outline-offset: 3px;
+}
+
+/* Optional: avoid Firefox “sticky focus” visual */
+.revolut-link:focus:not(:focus-visible) {
+  outline: none;
+}

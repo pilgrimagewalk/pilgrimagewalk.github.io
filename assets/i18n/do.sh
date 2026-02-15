@@ -1,0 +1,32 @@
+declare -A T
+T[bg]='Древни пътища и марийни светилища...'
+T[cs]='Starobylé cesty a mariánské svatyně...'
+T[da]='Gamle stier og marianske helligdomme...'
+T[de]='Alte Wege & Marienheiligtümer...'
+T[el]='Αρχαία μονοπάτια και Μαριανά προσκυνήματα...'
+T[en]='Ancient paths & Marian shrines...'
+T[es]='Senderos antiguos y santuarios marianos...'
+T[et]='Iidsed rajad ja Maarja pühapaigad...'
+T[fi]='Muinaiset polut ja Marian pyhäköt...'
+T[fr]='Chemins anciens & sanctuaires marials...'
+T[hr]='Drevne staze i marijanska svetišta...'
+T[hu]='Ősi ösvények és Mária-kegyhelyek...'
+T[it]='Sentieri antichi e santuari mariani...'
+T[lt]='Senoviniai takai ir Marijos šventovės...'
+T[lv]='Senie ceļi un Marijas svētvietas...'
+T[mt]='Mogħdijiet antiki u santwarji Marjani...'
+T[nl]='Oude paden & Mariaheiligdommen...'
+T[no]='Gamle stier og marianske helligdommer...'
+T[pl]='Dawne szlaki i sanktuaria maryjne...'
+T[pt]='Caminhos antigos e santuários marianos...'
+T[ro]='Cărări străvechi și sanctuare mariane...'
+T[sk]='Starobylé chodníky a mariánske svätyne...'
+T[sl]='Starodavne poti in Marijina svetišča...'
+T[sr]='Drevni putevi i marijanska svetilišta...'
+T[sv]='Uråldriga stigar & marianska helgedomar...'
+T[tr]='Kadim yollar ve Meryem Ana türbeleri...'
+T[uk]='Давні шляхи та марійські святині...'
+
+for lang in "${!T[@]}"; do
+  perl -pi -e "s/\"footer_tagline\"\\s*:\\s*\"[^\"]*\"/\"footer_tagline\": \"${T[$lang]}\"/" "$lang.json"
+done

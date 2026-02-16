@@ -204,40 +204,24 @@
     <div class="shrines-map-card mb-4">
       <!-- Wrap image so you can overlay marker dots if you want -->
       <div class="shrines-map-wrap">
-        <!-- <img src="assets/img/Marian-Network-Color.webp" -->
         <img src="assets/img/Europe-gold.webp"
              alt="European Marian Network Map"
              class="shrines-map-img">
 
-
-<a class="map-marker"
-   tabindex="0"
-   role="button"
-
-   data-bs-toggle="popover"
-   data-bs-trigger="focus"
-   data-bs-placement="top"
-   data-bs-html="true"
-
-   data-bs-title="Knock Shrine"
-   data-bs-content="
-     County Mayo, Ireland<br>
-     Major Marian apparition site (1879)<br>
-     <a href='https://www.knockshrine.ie/' target='_blank'>Visit website →</a>
-   "
-
-   style="top: 8.86%; left: 4.11%;"
-   aria-label="Knock Shrine">
-
-   <span class="map-marker-num">Knock</span>
-
-</a>
+        <button class="map-marker"
+                type="button"
+                data-bs-toggle="popover"
+                data-bs-trigger="click"
+                data-bs-placement="top"
+                data-bs-html="true"
+                data-bs-title="Knock Shrine"
+                data-bs-content="County Mayo, Ireland<br>Major Marian apparition site (1879)<br><a href='https://www.knockshrine.ie/' target='_blank' rel='noopener noreferrer'>Visit website →</a>"
+                style="top: 8.86%; left: 4.11%;"
+                aria-label="Knock Shrine">
+        <span class="map-marker-num">Knock</span>
+        </button>
 
 
-        <!-- <a class="map-marker" href="https://www.knockshrine.ie/" target="_blank" rel="noopener noreferrer" -->
-        <!-- style="top: 8.86%; left: 4.11%;" aria-label="1. Knock (Ireland)"> -->
-        <!-- <span class="map-marker-num">Knock</span> -->
-        <!-- </a> -->
 
         <a class="map-marker" href="https://www.walsingham.org.uk" target="_blank" rel="noopener noreferrer"
         style="top: 14.34%; left: 28.37%;" aria-label="2. Walsingham (UK)">
@@ -341,6 +325,8 @@
 
       </div>
     </div>
+
+    <!-- 
 
     <div class="row g-2 g-sm-3" aria-label="Shrines list">
       <div class="col-12 col-sm-6 col-md-4 col-lg-3">
@@ -513,7 +499,10 @@
 
 
     </div>
+-->
+
   </div>
+
 </section>
 
 

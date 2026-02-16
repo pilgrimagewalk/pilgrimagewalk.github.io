@@ -10967,85 +10967,74 @@ img {
   height: auto;
 }
 
+/* SHRINES – option 1: map + chips */
 
-/* Map overlay support */
-#shrines .shrines-map-wrap { position: relative; }
-#shrines .shrines-map-img { width: 100%; height: auto; display: block; }
-
-/* Optional numbered marker dots on the map */
-#shrines .map-marker {
-  position: absolute;
-  transform: translate(-50%, -50%);
-  width: 26px;
-  height: 26px;
-  border-radius: 999px;
-
-  display: grid;
-  place-items: center;
-
-  background: rgba(255,253,248,0.95);
-  border: 1px solid #cdb89a;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.12);
-
-  font-size: 0.85rem;
-  line-height: 1;
+#shrines .shrines-map-card {
+  background: #fffdf8;
+  border: 1px solid #e6dccb;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
 }
 
-/* Tile-style links */
-#shrines .shrine-tile {
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
+#shrines .shrines-map-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
-  padding: 0.65rem 0.75rem;
-  border-radius: 12px;
+/* chip layout */
+#shrines .shrines-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  align-items: center;
+}
+
+/* each shrine "pill" */
+#shrines .shrine-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.45rem 0.70rem;
+  border-radius: 999px;
 
   background: #fffdf8;
   border: 1px solid #e6dccb;
   box-shadow: 0 1px 4px rgba(0,0,0,0.05);
 
-  text-decoration: none;
   color: inherit;
+  text-decoration: none;
+
+  line-height: 1;
+  font-size: 0.9rem;
 }
 
-#shrines .shrine-tile:hover {
+#shrines .shrine-chip:hover {
   transform: translateY(-1px);
   box-shadow: 0 6px 14px rgba(120, 88, 58, 0.18);
   border-color: #cdb89a;
 }
 
-/* Number badge in each tile */
-#shrines .shrine-num {
-  width: 24px;
-  height: 24px;
-  border-radius: 999px;
-  display: grid;
-  place-items: center;
-
-  background: #fff;
-  border: 1px solid #cdb89a;
-  font-size: 0.85rem;
-  line-height: 1;
-}
-
-/* Flag reuse */
-#shrines .flag {
+/* flags inside chips */
+#shrines .shrine-chip .flag {
   width: 28px;
   height: auto;
   border-radius: 4px;
+  box-shadow: none; /* stops double-shadow if your global img has one */
   filter: saturate(0.95) contrast(0.95);
 }
 
-#shrines .shrine-name {
-  line-height: 1.15;
-  font-size: 0.95rem;
+/* small screens: slightly tighter chips */
+@media (max-width: 576px) {
+  #shrines .shrine-chip {
+    font-size: 0.85rem;
+    padding: 0.42rem 0.62rem;
+  }
 }
 
-/* Small screens: slightly tighter */
-@media (max-width: 576px) {
-  #shrines .shrine-tile { padding: 0.58rem 0.7rem; }
-  #shrines .shrine-name { font-size: 0.92rem; }
-}
+
+
 
 
 

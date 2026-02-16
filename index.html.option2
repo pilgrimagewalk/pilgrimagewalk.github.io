@@ -195,46 +195,52 @@
         </div>
         </section>
 
+
 <section id="shrines" class="py-5">
   <div class="container px-4 px-lg-5">
     <h2 class="display-4 text-center mb-5" data-i18n="european_marian_network_heading">
       European Marian Network
     </h2>
 
-    <div class="shrines-map-card mb-4">
-      <!-- Wrap image so you can overlay marker dots if you want -->
-      <div class="shrines-map-wrap">
-        <img src="assets/img/Marian-Network-Color.webp"
-             alt="European Marian Network Map"
-             class="shrines-map-img">
-
-        <!-- OPTIONAL: example overlay marker (repeat 21x with different top/left) -->
-        <!-- <span class="map-marker" style="top: 20%; left: 10%;">1</span> -->
-      </div>
-    </div>
-
-    <div class="row g-2 g-sm-3" aria-label="Shrines list">
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-        <a class="shrine-tile" href="https://www.knockshrine.ie/" target="_blank" rel="noopener noreferrer">
-          <span class="shrine-num">1</span>
-          <img class="flag" src="assets/img/flags/ie.webp" alt="Ireland flag" width="30" height="22">
-          <span class="shrine-name">Knock</span>
-        </a>
+    <div class="row g-4 align-items-start">
+      <!-- Left: map -->
+      <div class="col-12 col-lg-7">
+        <div class="shrines-map-card shrines-sticky">
+          <img src="assets/img/Marian-Network-Color.webp"
+               alt="European Marian Network Map"
+               class="shrines-map-img">
+        </div>
       </div>
 
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-        <a class="shrine-tile" href="https://www.walsingham.org.uk" target="_blank" rel="noopener noreferrer">
-          <span class="shrine-num">2</span>
-          <img class="flag" src="assets/img/flags/gb.webp" alt="UK flag" width="30" height="22">
-          <span class="shrine-name">Walsingham</span>
-        </a>
-      </div>
+      <!-- Right: list -->
+      <div class="col-12 col-lg-5">
+        <div class="shrines-list-card">
+          <div class="d-flex align-items-center justify-content-between mb-2">
+            <h3 class="h5 mb-0">Shrines</h3>
+            <span class="text-muted small">21</span>
+          </div>
 
-      <!-- ...repeat for the rest... -->
+          <div class="shrines-list" aria-label="Shrines list">
+            <!-- Convert each chip to a list item style link -->
+            <a class="shrine-row" href="https://www.knockshrine.ie/" target="_blank" rel="noopener noreferrer">
+              <img class="flag" src="assets/img/flags/ie.webp" alt="Ireland flag" width="30" height="22">
+              <span class="shrine-name">Knock</span>
+              <span class="shrine-ext" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="shrine-row" href="https://www.walsingham.org.uk" target="_blank" rel="noopener noreferrer">
+              <img class="flag" src="assets/img/flags/gb.webp" alt="UK flag" width="30" height="22">
+              <span class="shrine-name">Walsingham</span>
+              <span class="shrine-ext" aria-hidden="true">↗</span>
+            </a>
+
+            <!-- ...repeat for the rest... -->
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
-
 
 
 

@@ -10958,52 +10958,125 @@ img {
     border-radius: 6px;
 }
 
+
+
+/* ---------Start Shrines-------------------------------------------------------------------------------------------- */
 /* ------------------------------------------------------------------------------------------------------------------ */
-
-
-.flag {
-  filter: saturate(70%) brightness(120%) contrast(80%);
-  width: 30px;
-  height: auto;
-}
-
 
 /* Map overlay support */
 #shrines .shrines-map-wrap { position: relative; }
 #shrines .shrines-map-img { width: 100%; height: auto; display: block; }
 
-/* Optional numbered marker dots on the map */
-#shrines .map-marker {
+
+
+/* anchor is now the big hotspot */
+#shrines .shrines-map-wrap a.map-marker {
   position: absolute;
   transform: translate(-50%, -50%);
-  width: 26px;
-  height: 26px;
-  border-radius: 999px;
 
-  display: grid;
-  place-items: center;
+  /* bigger hit area (tweak) */
+  width: 44px;
+  height: 44px;
 
-  background: rgba(255,253,248,0.95);
-  border: 1px solid #cdb89a;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+  background: transparent;
+  border: 0;
+  box-shadow: none;
 
-  font-size: 0.85rem;
-  line-height: 1;
+  /* makes it easy to position the number inside */
+  display: block;
+  text-decoration: none;
 }
+
+
+
+/* #shrines .shrines-map-wrap a.map-marker .map-marker-num { */
+  /* position: absolute; */
+  /* top: 50%; */
+  /* left: 50%; */
+  /* transform: translate(12px, -20px); */
+  /* font-size: 0.85rem; */
+  /* font-weight: 600; */
+  /* LLLLL white text RRRRR */
+  /* color: rgba(255,255,255,0.96); */
+  /* LLLLL Marian blue background RRRRR */
+  /* background: linear-gradient( */
+    /* 180deg, */
+    /* rgba(36, 74, 142, 0.96), */
+    /* rgba(24, 58, 120, 0.96) */
+  /* ); */
+  /* border-radius: 6px; */
+  /* padding: 3px 8px; */
+  /* white-space: nowrap; */
+  /* LLLLL Marian luminous glow RRRRR */
+  /* box-shadow: */
+    /* 0 4px 14px rgba(0,0,0,0.25),        LLLLL depth RRRRR */
+    /* 0 0 10px rgba(52, 102, 185, 0.45),  LLLLL blue glow RRRRR */
+    /* 0 0 22px rgba(52, 102, 185, 0.25),  LLLLL outer glow RRRRR */
+    /* inset 0 0 6px rgba(255,255,255,0.18); LLLLL inner light RRRRR */
+  /* opacity: 0; */
+  /* visibility: hidden; */
+  /* transition: */
+    /* opacity 0.15s ease, */
+    /* transform 0.15s ease, */
+    /* box-shadow 0.15s ease; */
+  /* pointer-events: none; */
+/* } */
+
+
+#shrines .shrines-map-wrap a.map-marker .map-marker-num {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(12px, -20px);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: rgba(255,255,255,0.98);
+  /* lighter Marian blue */
+  background: linear-gradient(
+    180deg,
+    rgba(58, 102, 184, 0.96),   /* lighter top */
+    rgba(38, 78, 156, 0.96)     /* deeper base */
+  );
+  border-radius: 6px;
+  padding: 3px 8px;
+  white-space: nowrap;
+  /* luminous Marian glow */
+  box-shadow:
+    0 4px 14px rgba(0,0,0,0.22),
+    0 0 12px rgba(90, 140, 220, 0.55),
+    0 0 24px rgba(90, 140, 220, 0.30),
+    inset 0 0 6px rgba(255,255,255,0.22);
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.15s ease,
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+  pointer-events: none;
+}
+
+
+#shrines .shrines-map-wrap a.map-marker:hover .map-marker-num,
+#shrines .shrines-map-wrap a.map-marker:focus-visible .map-marker-num {
+  opacity: 1;
+  visibility: visible;
+
+  transform: translate(12px, -22px);
+}
+
+
+
 
 /* Tile-style links */
 #shrines .shrine-tile {
   display: flex;
   align-items: center;
   gap: 0.6rem;
-
   padding: 0.65rem 0.75rem;
   border-radius: 12px;
-
   background: #fffdf8;
   border: 1px solid #e6dccb;
   box-shadow: 0 1px 4px rgba(0,0,0,0.05);
-
   text-decoration: none;
   color: inherit;
 }
@@ -11014,19 +11087,6 @@ img {
   border-color: #cdb89a;
 }
 
-/* Number badge in each tile */
-#shrines .shrine-num {
-  width: 24px;
-  height: 24px;
-  border-radius: 999px;
-  display: grid;
-  place-items: center;
-
-  background: #fff;
-  border: 1px solid #cdb89a;
-  font-size: 0.85rem;
-  line-height: 1;
-}
 
 /* Flag reuse */
 #shrines .flag {
@@ -11036,10 +11096,16 @@ img {
   filter: saturate(0.95) contrast(0.95);
 }
 
+#shrines .shrine-tile .flag {
+  filter: saturate(1.1) brightness(1.05);
+}
+
 #shrines .shrine-name {
   line-height: 1.15;
   font-size: 0.95rem;
 }
+
+#shrines .shrine-ext { opacity: 0.55; }
 
 /* Small screens: slightly tighter */
 @media (max-width: 576px) {
@@ -11048,8 +11114,26 @@ img {
 }
 
 
+/* makes absolute-positioned markers measure from this box */
+#shrines .shrines-map-wrap {
+  position: relative;
+}
+
+/* hover/focus */
+#shrines .map-marker:hover {
+  transform: translate(-50%, -50%) scale(1.06);
+  box-shadow: 0 6px 16px rgba(120, 88, 58, 0.22);
+  border-color: #bfa27b;
+}
+
+#shrines .map-marker:focus-visible {
+  outline: 3px solid rgba(205, 184, 154, 0.9);
+  outline-offset: 2px;
+}
+
 
 /* ------------------------------------------------------------------------------------------------------------------ */
+/* --------End Shrines----------------------------------------------------------------------------------------------- */
 
 /* On the Road collage */
 #on-the-road.on-road-panel {
@@ -11187,9 +11271,13 @@ img {
   display: inline-flex;
   align-items: center;
   gap: 0.45rem;
-  /* earthy tan gradient */
-  background: linear-gradient(180deg, #96744d 0%, #78583a 100%);
-  border: 1px solid #8e6f4e;
+/* Marian blue donate button */
+background: linear-gradient(
+  180deg,
+  #4876c8 0%,   /* lighter Marian blue */
+  #2c58aa 100%  /* deeper Marian blue */
+);
+border: 1px solid #3f69b8;
   color: #f4efe6 !important;
   font-size: 0.85rem;
   font-weight: 600;
@@ -11201,18 +11289,24 @@ img {
   transition: transform 0.08s ease, box-shadow 0.10s ease, filter 0.10s ease;
 }
 
+
+
 .kofi-link .kofi-icon {
   /* font-size: 0.95rem; */
   font-size: 1.20rem;
 }
 
 .kofi-link:hover {
-  color: #fffaf2 !important;
-  /* brighter surface response */
-  filter: brightness(1.08);
-  /* slightly more lift */
+  color: rgba(255,255,255,0.98) !important;
+  /* brighter Marian blue response */
+  filter: brightness(1.10);
+  /* lift effect */
   transform: translateY(-2px);
-  box-shadow: 0 10px 14px rgba(120, 88, 58, 0.45);
+  /* Marian blue glow + depth */
+  box-shadow:
+    0 10px 18px rgba(44, 88, 170, 0.45),   /* main Marian shadow */
+    0 0 16px rgba(90, 140, 220, 0.45),     /* luminous Marian glow */
+    inset 0 0 6px rgba(255,255,255,0.25);  /* inner light */
   text-decoration: none;
 }
 

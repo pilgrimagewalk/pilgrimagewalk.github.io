@@ -11032,51 +11032,19 @@ img {
 
 
 
-/* Tile-style links */
-#shrines .shrine-tile {
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-  padding: 0.65rem 0.75rem;
-  border-radius: 12px;
-  background: #fffdf8;
-  border: 1px solid #e6dccb;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
-  text-decoration: none;
-  color: inherit;
-}
-
-#shrines .shrine-tile:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 6px 14px rgba(120, 88, 58, 0.18);
-  border-color: #cdb89a;
-}
-
-
-/* Flag reuse */
-#shrines .flag {
-  width: 28px;
-  height: auto;
-  border-radius: 4px;
-  filter: saturate(0.95) contrast(0.95);
-}
-
-#shrines .shrine-tile .flag {
-  filter: saturate(1.1) brightness(1.05);
-}
-
-#shrines .shrine-name {
-  line-height: 1.15;
-  font-size: 0.95rem;
-}
-
-#shrines .shrine-ext { opacity: 0.55; }
-
-
 #shrines .shrine-panel {
   background: #fffdf8;
   border: 1px solid #e6dccb;
   box-shadow: 0 6px 18px rgba(120, 88, 58, 0.12);
+}
+
+#shrines .shrine-panel #shrinePanelTitle {
+  font-size: 1.1rem;
+}
+
+#shrines .shrine-panel p {
+  font-size: 0.88rem;
+  line-height: 1.35;
 }
 
 #shrines #shrinePanelImg {
@@ -11090,18 +11058,6 @@ img {
   outline: 3px solid rgba(205, 184, 154, 0.95);
   outline-offset: 1px;
 }
-
-#shrines .shrine-tile.is-active {
-  border-color: #bfa27b;
-  box-shadow: 0 8px 16px rgba(120, 88, 58, 0.22);
-}
-
-/* Small screens: slightly tighter */
-@media (max-width: 576px) {
-  #shrines .shrine-tile { padding: 0.58rem 0.7rem; }
-  #shrines .shrine-name { font-size: 0.92rem; }
-}
-
 
 /* makes absolute-positioned markers measure from this box */
 #shrines .shrines-map-wrap {
@@ -11358,5 +11314,4 @@ border: 1px solid #3f69b8;
 
 /* very hacky: down in the footer I want some spaces after data-i18n="support_title" */
 .footer-title::after { content: "\00a0\00a0\00a0"; }
-
 

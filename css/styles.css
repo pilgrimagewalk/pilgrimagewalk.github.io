@@ -10969,7 +10969,8 @@ img {
 
 
 
-#shrines .shrines-map-wrap button.map-marker {
+/* anchor is now the big hotspot */
+#shrines .shrines-map-wrap a.map-marker {
   position: absolute;
   transform: translate(-50%, -50%);
 
@@ -10987,7 +10988,42 @@ img {
 }
 
 
-#shrines .shrines-map-wrap button.map-marker .map-marker-num {
+
+/* #shrines .shrines-map-wrap a.map-marker .map-marker-num { */
+  /* position: absolute; */
+  /* top: 50%; */
+  /* left: 50%; */
+  /* transform: translate(12px, -20px); */
+  /* font-size: 0.85rem; */
+  /* font-weight: 600; */
+  /* LLLLL white text RRRRR */
+  /* color: rgba(255,255,255,0.96); */
+  /* LLLLL Marian blue background RRRRR */
+  /* background: linear-gradient( */
+    /* 180deg, */
+    /* rgba(36, 74, 142, 0.96), */
+    /* rgba(24, 58, 120, 0.96) */
+  /* ); */
+  /* border-radius: 6px; */
+  /* padding: 3px 8px; */
+  /* white-space: nowrap; */
+  /* LLLLL Marian luminous glow RRRRR */
+  /* box-shadow: */
+    /* 0 4px 14px rgba(0,0,0,0.25),        LLLLL depth RRRRR */
+    /* 0 0 10px rgba(52, 102, 185, 0.45),  LLLLL blue glow RRRRR */
+    /* 0 0 22px rgba(52, 102, 185, 0.25),  LLLLL outer glow RRRRR */
+    /* inset 0 0 6px rgba(255,255,255,0.18); LLLLL inner light RRRRR */
+  /* opacity: 0; */
+  /* visibility: hidden; */
+  /* transition: */
+    /* opacity 0.15s ease, */
+    /* transform 0.15s ease, */
+    /* box-shadow 0.15s ease; */
+  /* pointer-events: none; */
+/* } */
+
+
+#shrines .shrines-map-wrap a.map-marker .map-marker-num {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -11019,18 +11055,12 @@ img {
   pointer-events: none;
 }
 
-/* remove default button look safely */
-#shrines .shrines-map-wrap button.map-marker {
-  appearance: none;
-  -webkit-appearance: none;
-  font: inherit;
-}
 
-
-#shrines .shrines-map-wrap button.map-marker:hover .map-marker-num,
-#shrines .shrines-map-wrap button.map-marker:focus-visible .map-marker-num {
+#shrines .shrines-map-wrap a.map-marker:hover .map-marker-num,
+#shrines .shrines-map-wrap a.map-marker:focus-visible .map-marker-num {
   opacity: 1;
   visibility: visible;
+
   transform: translate(12px, -22px);
 }
 

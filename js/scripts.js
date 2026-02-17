@@ -189,6 +189,14 @@
     });
   }
 
+  function hideShrinePanel() {
+    var panel = document.getElementById('shrinePanel');
+    if (panel) {
+      panel.classList.add('d-none');
+    }
+    updateActiveShrine('');
+  }
+
   function renderPlaceholderPanel() {
     var panelTitle = document.getElementById('shrinePanelTitle');
     var panelFlag = document.getElementById('shrinePanelFlag');
@@ -215,7 +223,7 @@
     panelLink.textContent = getTranslation('shrine_panel_visit_site', 'Visit website');
     setLinkState(panelLink, false);
 
-    updateActiveShrine('');
+    hideShrinePanel();
   }
 
   function renderShrinePanel(shrineId) {
@@ -273,10 +281,16 @@
     setLinkState(panelLink, !!meta.url, meta.url);
 
     updateActiveShrine(shrineId);
+
+    var panel = document.getElementById('shrinePanel');
+    if (panel) {
+      panel.classList.remove('d-none');
+    }
   }
 
   function initShrineInteractions() {
     var shrineElements = document.querySelectorAll('#shrines .map-marker[data-shrine]');
+    var mapWrap = document.querySelector('#shrines .shrines-map-wrap');
 
     shrineElements.forEach(function (element) {
       element.addEventListener('click', function (event) {
@@ -290,9 +304,19 @@
         }
 
         event.preventDefault();
+        event.stopPropagation();
         renderShrinePanel(shrineId);
       });
     });
+
+    if (mapWrap) {
+      mapWrap.addEventListener('click', function (event) {
+        if (event.target.closest('.map-marker') || event.target.closest('#shrinePanel')) {
+          return;
+        }
+        hideShrinePanel();
+      });
+    }
   }
 
   document.addEventListener('DOMContentLoaded', function () {

@@ -3,12 +3,15 @@
  */
 (function () {
   var SUPPORTED_LANGUAGES = [
-    'en', 'cs', 'da', 'de', 'el', 'es', 'fr', 
+    'en', 'cs', 'da', 'de', 'el', 'es', 'fr',
     'hr', 'hu', 'it', 'lt', 'mt',
-    'nl', 'pl', 'pt', 'ro', 'sk', 'sl', 'sv', 
+    'nl', 'pl', 'pt', 'ro', 'sk', 'sl', 'sv',
     'uk', 'bg', 'sr',
     'et', 'fi', 'lv', 'no', 'tr'
   ];
+
+  var SHRINE_META = null;
+  var I18N_DICT = {};
 
   function getPreferredLanguage() {
     var testLanguage = (document.documentElement.getAttribute('data-test-lang') || '').toLowerCase();
@@ -96,9 +99,25 @@
       })
       .then(function (result) {
         if (result && result.dictionary) {
+          I18N_DICT = result.dictionary;
+          window.I18N_DICT = result.dictionary;
+          window.I18N_LANG = result.language;
           applyTranslations(result.dictionary);
           document.documentElement.lang = result.language;
         }
+      });
+  }
+
+  function loadShrineMeta() {
+    return fetch('assets/shrines/index.json')
+      .then(function (response) {
+        if (!response.ok) {
+          throw new Error('Shrine metadata load failed');
+        }
+        return response.json();
+      })
+      .then(function (data) {
+        SHRINE_META = data;
       });
   }
 
@@ -137,9 +156,159 @@
     }
   }
 
+  function getTranslation(key, fallback) {
+    if (I18N_DICT && Object.prototype.hasOwnProperty.call(I18N_DICT, key) && I18N_DICT[key]) {
+      return I18N_DICT[key];
+    }
+    return fallback || '';
+  }
+
+  function setLinkState(link, isEnabled, href) {
+    if (!link) return;
+
+    if (isEnabled && href) {
+      link.classList.remove('disabled');
+      link.removeAttribute('aria-disabled');
+      link.removeAttribute('tabindex');
+      link.href = href;
+      return;
+    }
+
+    link.classList.add('disabled');
+    link.setAttribute('aria-disabled', 'true');
+    link.setAttribute('tabindex', '-1');
+    link.href = '#';
+  }
+
+  function updateActiveShrine(shrineId) {
+    var elements = document.querySelectorAll('#shrines .map-marker[data-shrine], #shrines .shrine-tile[data-shrine]');
+
+    elements.forEach(function (element) {
+      var isActive = element.getAttribute('data-shrine') === shrineId;
+      element.classList.toggle('is-active', isActive);
+    });
+  }
+
+  function renderPlaceholderPanel() {
+    var panelTitle = document.getElementById('shrinePanelTitle');
+    var panelFlag = document.getElementById('shrinePanelFlag');
+    var panelImg = document.getElementById('shrinePanelImg');
+    var panelInfo1 = document.getElementById('shrinePanelInfo1');
+    var panelInfo2 = document.getElementById('shrinePanelInfo2');
+    var panelLink = document.getElementById('shrinePanelLink');
+
+    if (!panelTitle || !panelInfo1 || !panelInfo2 || !panelImg || !panelLink || !panelFlag) return;
+
+    panelTitle.textContent = 'Shrine Info';
+    panelFlag.classList.add('d-none');
+    panelFlag.src = '';
+    panelFlag.alt = '';
+
+    panelImg.classList.add('d-none');
+    panelImg.src = '';
+    panelImg.alt = '';
+
+    panelInfo1.textContent = getTranslation('shrine_panel_placeholder', 'Click a shrine on the map to view information.');
+    panelInfo2.classList.add('d-none');
+    panelInfo2.textContent = '';
+
+    panelLink.textContent = getTranslation('shrine_panel_visit_site', 'Visit website');
+    setLinkState(panelLink, false);
+
+    updateActiveShrine('');
+  }
+
+  function renderShrinePanel(shrineId) {
+    if (!SHRINE_META || !Object.prototype.hasOwnProperty.call(SHRINE_META, shrineId)) {
+      return;
+    }
+
+    var meta = SHRINE_META[shrineId] || {};
+
+    var panelTitle = document.getElementById('shrinePanelTitle');
+    var panelFlag = document.getElementById('shrinePanelFlag');
+    var panelImg = document.getElementById('shrinePanelImg');
+    var panelInfo1 = document.getElementById('shrinePanelInfo1');
+    var panelInfo2 = document.getElementById('shrinePanelInfo2');
+    var panelLink = document.getElementById('shrinePanelLink');
+
+    if (!panelTitle || !panelInfo1 || !panelInfo2 || !panelImg || !panelLink || !panelFlag) return;
+
+    var name = getTranslation('shrine_' + shrineId + '_name', meta.fallbackName || '');
+    var info1 = getTranslation('shrine_' + shrineId + '_info1', '');
+    var info2 = getTranslation('shrine_' + shrineId + '_info2', '');
+
+    panelTitle.textContent = name;
+    panelInfo1.textContent = info1;
+
+    if (info2) {
+      panelInfo2.textContent = info2;
+      panelInfo2.classList.remove('d-none');
+    } else {
+      panelInfo2.textContent = '';
+      panelInfo2.classList.add('d-none');
+    }
+
+    if (meta.flag) {
+      panelFlag.src = meta.flag;
+      panelFlag.alt = meta.country ? meta.country + ' flag' : '';
+      panelFlag.classList.remove('d-none');
+    } else {
+      panelFlag.classList.add('d-none');
+      panelFlag.src = '';
+      panelFlag.alt = '';
+    }
+
+    if (meta.image) {
+      panelImg.src = meta.image;
+      panelImg.alt = name || meta.fallbackName || '';
+      panelImg.classList.remove('d-none');
+    } else {
+      panelImg.src = '';
+      panelImg.alt = '';
+      panelImg.classList.add('d-none');
+    }
+
+    panelLink.textContent = getTranslation('shrine_panel_visit_site', 'Visit website');
+    setLinkState(panelLink, !!meta.url, meta.url);
+
+    updateActiveShrine(shrineId);
+  }
+
+  function initShrineInteractions() {
+    var shrineElements = document.querySelectorAll('#shrines .map-marker[data-shrine], #shrines .shrine-tile[data-shrine]');
+
+    shrineElements.forEach(function (element) {
+      element.addEventListener('click', function (event) {
+        if (!SHRINE_META) {
+          return;
+        }
+
+        var shrineId = element.getAttribute('data-shrine');
+        if (!shrineId || !Object.prototype.hasOwnProperty.call(SHRINE_META, shrineId)) {
+          return;
+        }
+
+        event.preventDefault();
+        renderShrinePanel(shrineId);
+      });
+    });
+  }
+
   document.addEventListener('DOMContentLoaded', function () {
     setupMapButton();
     setCurrentYear();
-    loadTranslations();
+
+    loadTranslations()
+      .then(function () {
+        return loadShrineMeta();
+      })
+      .then(function () {
+        initShrineInteractions();
+        renderPlaceholderPanel();
+      })
+      .catch(function () {
+        renderPlaceholderPanel();
+      });
   });
 })();

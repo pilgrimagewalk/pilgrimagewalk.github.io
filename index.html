@@ -295,9 +295,15 @@
 
             <div id="shrinePanel" class="card shrine-panel shrine-panel-popup d-none" aria-live="polite">
               <div class="card-body">
-                <div class="d-flex align-items-center gap-2 mb-2">
-                  <img id="shrinePanelFlag" src="" class="rounded d-none" style="width:28px; height:auto;" alt="">
-                  <h3 id="shrinePanelTitle" class="h5 mb-0">Shrine Info</h3>
+                <div class="d-flex align-items-start justify-content-between gap-2 mb-2">
+                  <div class="d-flex align-items-center gap-2">
+                    <img id="shrinePanelFlag" src="" class="rounded d-none" style="width:28px; height:auto;" alt="">
+                    <h3 id="shrinePanelTitle" class="h5 mb-0">Shrine Info</h3>
+                  </div>
+                  <button id="shrinePanelClose"
+                          type="button"
+                          class="btn-close shrine-panel-close"
+                          aria-label="Close shrine details"></button>
                 </div>
 
                 <img id="shrinePanelImg" src="" class="img-fluid rounded mb-3 d-none" alt="">
@@ -305,7 +311,7 @@
                 <p id="shrinePanelInfo1" class="mb-2">Click a shrine on the map to view information.</p>
                 <p id="shrinePanelInfo2" class="mb-3 d-none"></p>
 
-                <a id="shrinePanelLink" class="btn btn-primary disabled" href="#" target="_blank" rel="noopener noreferrer" aria-disabled="true" tabindex="-1">Visit website</a>
+                <a id="shrinePanelLink" class="btn btn-primary btn-sm disabled" href="#" target="_blank" rel="noopener noreferrer" aria-disabled="true" tabindex="-1">Visit website</a>
               </div>
             </div>
           </div>

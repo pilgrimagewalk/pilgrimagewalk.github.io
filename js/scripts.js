@@ -193,8 +193,43 @@
     var panel = document.getElementById('shrinePanel');
     if (panel) {
       panel.classList.add('d-none');
+      panel.style.top = '';
+      panel.style.left = '';
     }
     updateActiveShrine('');
+  }
+
+  function positionShrinePanel(anchorElement) {
+    var panel = document.getElementById('shrinePanel');
+    var mapWrap = document.querySelector('#shrines .shrines-map-wrap');
+
+    if (!panel || !mapWrap || !anchorElement) return;
+
+    var markerRect = anchorElement.getBoundingClientRect();
+    var wrapRect = mapWrap.getBoundingClientRect();
+
+    var markerCenterX = markerRect.left - wrapRect.left + (markerRect.width / 2);
+    var markerCenterY = markerRect.top - wrapRect.top + (markerRect.height / 2);
+
+    var horizontalOffset = 16;
+    var verticalOffset = 14;
+
+    var panelWidth = panel.offsetWidth;
+    var panelHeight = panel.offsetHeight;
+
+    var desiredLeft = markerCenterX + horizontalOffset;
+    var desiredTop = markerCenterY - panelHeight - verticalOffset;
+
+    var minLeft = 8;
+    var minTop = 8;
+    var maxLeft = Math.max(minLeft, wrapRect.width - panelWidth - 8);
+    var maxTop = Math.max(minTop, wrapRect.height - panelHeight - 8);
+
+    var clampedLeft = Math.min(Math.max(desiredLeft, minLeft), maxLeft);
+    var clampedTop = Math.min(Math.max(desiredTop, minTop), maxTop);
+
+    panel.style.left = clampedLeft + 'px';
+    panel.style.top = clampedTop + 'px';
   }
 
   function renderPlaceholderPanel() {
@@ -226,7 +261,7 @@
     hideShrinePanel();
   }
 
-  function renderShrinePanel(shrineId) {
+  function renderShrinePanel(shrineId, anchorElement) {
     if (!SHRINE_META || !Object.prototype.hasOwnProperty.call(SHRINE_META, shrineId)) {
       return;
     }
@@ -285,6 +320,7 @@
     var panel = document.getElementById('shrinePanel');
     if (panel) {
       panel.classList.remove('d-none');
+      positionShrinePanel(anchorElement);
     }
   }
 
@@ -305,7 +341,7 @@
 
         event.preventDefault();
         event.stopPropagation();
-        renderShrinePanel(shrineId);
+        renderShrinePanel(shrineId, element);
       });
     });
 
@@ -317,6 +353,24 @@
         hideShrinePanel();
       });
     }
+
+    var closeButton = document.getElementById('shrinePanelClose');
+    if (closeButton) {
+      closeButton.addEventListener('click', function (event) {
+        event.preventDefault();
+        event.stopPropagation();
+        hideShrinePanel();
+      });
+    }
+
+    window.addEventListener('resize', function () {
+      var activeShrine = document.querySelector('#shrines .map-marker.is-active');
+      var panel = document.getElementById('shrinePanel');
+      if (!activeShrine || !panel || panel.classList.contains('d-none')) {
+        return;
+      }
+      positionShrinePanel(activeShrine);
+    });
   }
 
   document.addEventListener('DOMContentLoaded', function () {

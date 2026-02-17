@@ -181,7 +181,7 @@
   }
 
   function updateActiveShrine(shrineId) {
-    var elements = document.querySelectorAll('#shrines .map-marker[data-shrine], #shrines .shrine-tile[data-shrine]');
+    var elements = document.querySelectorAll('#shrines .map-marker[data-shrine]');
 
     elements.forEach(function (element) {
       var isActive = element.getAttribute('data-shrine') === shrineId;
@@ -276,7 +276,7 @@
   }
 
   function initShrineInteractions() {
-    var shrineElements = document.querySelectorAll('#shrines .map-marker[data-shrine], #shrines .shrine-tile[data-shrine]');
+    var shrineElements = document.querySelectorAll('#shrines .map-marker[data-shrine]');
 
     shrineElements.forEach(function (element) {
       element.addEventListener('click', function (event) {

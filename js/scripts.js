@@ -163,23 +163,6 @@
     return fallback || '';
   }
 
-  function setLinkState(link, isEnabled, href) {
-    if (!link) return;
-
-    if (isEnabled && href) {
-      link.classList.remove('disabled');
-      link.removeAttribute('aria-disabled');
-      link.removeAttribute('tabindex');
-      link.href = href;
-      return;
-    }
-
-    link.classList.add('disabled');
-    link.setAttribute('aria-disabled', 'true');
-    link.setAttribute('tabindex', '-1');
-    link.href = '#';
-  }
-
   function updateActiveShrine(shrineId) {
     var elements = document.querySelectorAll('#shrines .map-marker[data-shrine]');
 
@@ -189,6 +172,9 @@
     });
   }
 
+  var activeShrinePanelAnchor = null;
+  var SHRINE_PANEL_HIDE_RADIUS = 86;
+
   function hideShrinePanel() {
     var panel = document.getElementById('shrinePanel');
     if (panel) {
@@ -196,6 +182,7 @@
       panel.style.top = '';
       panel.style.left = '';
     }
+    activeShrinePanelAnchor = null;
     updateActiveShrine('');
   }
 
@@ -232,15 +219,100 @@
     panel.style.top = clampedTop + 'px';
   }
 
+  var activeVisitPromptAnchor = null;
+
+  function hideShrineVisitPrompt() {
+    var prompt = document.getElementById('shrineVisitPrompt');
+    if (prompt) {
+      prompt.classList.add('d-none');
+      prompt.style.top = '';
+      prompt.style.left = '';
+      prompt.setAttribute('data-url', '');
+    }
+    activeVisitPromptAnchor = null;
+  }
+
+  function positionShrineVisitPrompt(anchorElement) {
+    var prompt = document.getElementById('shrineVisitPrompt');
+    var mapWrap = document.querySelector('#shrines .shrines-map-wrap');
+
+    if (!prompt || !mapWrap || !anchorElement) return;
+
+    var markerRect = anchorElement.getBoundingClientRect();
+    var wrapRect = mapWrap.getBoundingClientRect();
+
+    var markerCenterX = markerRect.left - wrapRect.left + (markerRect.width / 2);
+    var markerCenterY = markerRect.top - wrapRect.top + (markerRect.height / 2);
+
+    var horizontalOffset = 14;
+    var verticalOffset = 12;
+
+    var promptWidth = prompt.offsetWidth;
+    var promptHeight = prompt.offsetHeight;
+
+    var desiredLeft = markerCenterX + horizontalOffset;
+    var desiredTop = markerCenterY + verticalOffset;
+
+    var minLeft = 8;
+    var minTop = 8;
+    var maxLeft = Math.max(minLeft, wrapRect.width - promptWidth - 8);
+    var maxTop = Math.max(minTop, wrapRect.height - promptHeight - 8);
+
+    prompt.style.left = Math.min(Math.max(desiredLeft, minLeft), maxLeft) + 'px';
+    prompt.style.top = Math.min(Math.max(desiredTop, minTop), maxTop) + 'px';
+  }
+
+  function ensureShrineVisitPrompt() {
+    var existingPrompt = document.getElementById('shrineVisitPrompt');
+    if (existingPrompt) {
+      return existingPrompt;
+    }
+
+    var mapWrap = document.querySelector('#shrines .shrines-map-wrap');
+    if (!mapWrap) return null;
+
+    var prompt = document.createElement('div');
+    prompt.id = 'shrineVisitPrompt';
+    prompt.className = 'shrine-visit-prompt d-none';
+    prompt.setAttribute('role', 'dialog');
+    prompt.setAttribute('aria-label', 'Visit shrine website');
+    prompt.innerHTML = [
+      '<p class="shrine-visit-prompt-text">Visit Shrine Website?</p>',
+      '<div class="shrine-visit-prompt-actions">',
+      '<button type="button" class="btn btn-primary btn-sm" data-shrine-visit="yes">Yes</button>',
+      '<button type="button" class="btn btn-outline-secondary btn-sm" data-shrine-visit="no">No</button>',
+      '</div>'
+    ].join('');
+
+    prompt.addEventListener('click', function (event) {
+      event.preventDefault();
+      event.stopPropagation();
+
+      var action = event.target.closest('[data-shrine-visit]');
+      if (!action) return;
+
+      if (action.getAttribute('data-shrine-visit') === 'yes') {
+        var url = prompt.getAttribute('data-url');
+        if (url) {
+          window.open(url, '_blank', 'noopener,noreferrer');
+        }
+      }
+
+      hideShrineVisitPrompt();
+    });
+
+    mapWrap.appendChild(prompt);
+    return prompt;
+  }
+
   function renderPlaceholderPanel() {
     var panelTitle = document.getElementById('shrinePanelTitle');
     var panelFlag = document.getElementById('shrinePanelFlag');
     var panelImg = document.getElementById('shrinePanelImg');
     var panelInfo1 = document.getElementById('shrinePanelInfo1');
     var panelInfo2 = document.getElementById('shrinePanelInfo2');
-    var panelLink = document.getElementById('shrinePanelLink');
 
-    if (!panelTitle || !panelInfo1 || !panelInfo2 || !panelImg || !panelLink || !panelFlag) return;
+    if (!panelTitle || !panelInfo1 || !panelInfo2 || !panelImg || !panelFlag) return;
 
     panelTitle.textContent = 'Shrine Info';
     panelFlag.classList.add('d-none');
@@ -254,9 +326,6 @@
     panelInfo1.textContent = getTranslation('shrine_panel_placeholder', 'Click a shrine on the map to view information.');
     panelInfo2.classList.add('d-none');
     panelInfo2.textContent = '';
-
-    panelLink.textContent = getTranslation('shrine_panel_visit_site', 'Visit website');
-    setLinkState(panelLink, false);
 
     hideShrinePanel();
   }
@@ -273,9 +342,8 @@
     var panelImg = document.getElementById('shrinePanelImg');
     var panelInfo1 = document.getElementById('shrinePanelInfo1');
     var panelInfo2 = document.getElementById('shrinePanelInfo2');
-    var panelLink = document.getElementById('shrinePanelLink');
 
-    if (!panelTitle || !panelInfo1 || !panelInfo2 || !panelImg || !panelLink || !panelFlag) return;
+    if (!panelTitle || !panelInfo1 || !panelInfo2 || !panelImg || !panelFlag) return;
 
     var name = getTranslation('shrine_' + shrineId + '_name', meta.fallbackName || '');
     var info1 = getTranslation('shrine_' + shrineId + '_info1', '');
@@ -312,10 +380,8 @@
       panelImg.classList.add('d-none');
     }
 
-    panelLink.textContent = getTranslation('shrine_panel_visit_site', 'Visit website');
-    setLinkState(panelLink, !!meta.url, meta.url);
-
     updateActiveShrine(shrineId);
+    activeShrinePanelAnchor = anchorElement;
 
     var panel = document.getElementById('shrinePanel');
     if (panel) {
@@ -328,37 +394,90 @@
     var shrineElements = document.querySelectorAll('#shrines .map-marker[data-shrine]');
     var mapWrap = document.querySelector('#shrines .shrines-map-wrap');
 
+    function showShrinePanelForElement(element) {
+      if (!SHRINE_META) {
+        return;
+      }
+
+      var shrineId = element.getAttribute('data-shrine');
+      if (!shrineId || !Object.prototype.hasOwnProperty.call(SHRINE_META, shrineId)) {
+        return;
+      }
+
+      renderShrinePanel(shrineId, element);
+    }
+
+    function showVisitPromptForElement(element) {
+      if (!SHRINE_META) {
+        return;
+      }
+
+      var shrineId = element.getAttribute('data-shrine');
+      if (!shrineId || !Object.prototype.hasOwnProperty.call(SHRINE_META, shrineId)) {
+        return;
+      }
+
+      var meta = SHRINE_META[shrineId] || {};
+      var shrineUrl = meta.url || element.href;
+      var prompt = ensureShrineVisitPrompt();
+
+      if (!prompt || !shrineUrl) return;
+
+      activeVisitPromptAnchor = element;
+      prompt.setAttribute('data-url', shrineUrl);
+      prompt.classList.remove('d-none');
+      positionShrineVisitPrompt(element);
+    }
+
     shrineElements.forEach(function (element) {
+      element.addEventListener('mouseenter', function () {
+        showShrinePanelForElement(element);
+      });
+
+      element.addEventListener('focus', function () {
+        showShrinePanelForElement(element);
+      });
+
       element.addEventListener('click', function (event) {
-        if (!SHRINE_META) {
-          return;
-        }
-
-        var shrineId = element.getAttribute('data-shrine');
-        if (!shrineId || !Object.prototype.hasOwnProperty.call(SHRINE_META, shrineId)) {
-          return;
-        }
-
         event.preventDefault();
         event.stopPropagation();
-        renderShrinePanel(shrineId, element);
+        hideShrinePanel();
+        showVisitPromptForElement(element);
       });
     });
 
     if (mapWrap) {
-      mapWrap.addEventListener('click', function (event) {
-        if (event.target.closest('.map-marker') || event.target.closest('#shrinePanel')) {
+      mapWrap.addEventListener('mousemove', function (event) {
+        var panel = document.getElementById('shrinePanel');
+        if (!activeShrinePanelAnchor || !panel || panel.classList.contains('d-none')) {
           return;
         }
+
+        if (event.target.closest('.map-marker')) {
+          return;
+        }
+
+        var markerRect = activeShrinePanelAnchor.getBoundingClientRect();
+        var markerCenterX = markerRect.left + (markerRect.width / 2);
+        var markerCenterY = markerRect.top + (markerRect.height / 2);
+        var distanceX = event.clientX - markerCenterX;
+        var distanceY = event.clientY - markerCenterY;
+        var distance = Math.sqrt((distanceX * distanceX) + (distanceY * distanceY));
+
+        if (distance > SHRINE_PANEL_HIDE_RADIUS) {
+          hideShrinePanel();
+        }
+      });
+
+      mapWrap.addEventListener('mouseleave', function () {
         hideShrinePanel();
       });
-    }
 
-    var closeButton = document.getElementById('shrinePanelClose');
-    if (closeButton) {
-      closeButton.addEventListener('click', function (event) {
-        event.preventDefault();
-        event.stopPropagation();
+      mapWrap.addEventListener('click', function (event) {
+        if (event.target.closest('.map-marker') || event.target.closest('#shrinePanel') || event.target.closest('#shrineVisitPrompt')) {
+          return;
+        }
+        hideShrineVisitPrompt();
         hideShrinePanel();
       });
     }
@@ -366,10 +485,14 @@
     window.addEventListener('resize', function () {
       var activeShrine = document.querySelector('#shrines .map-marker.is-active');
       var panel = document.getElementById('shrinePanel');
-      if (!activeShrine || !panel || panel.classList.contains('d-none')) {
-        return;
+      if (activeShrine && panel && !panel.classList.contains('d-none')) {
+        positionShrinePanel(activeShrine);
       }
-      positionShrinePanel(activeShrine);
+
+      var prompt = document.getElementById('shrineVisitPrompt');
+      if (activeVisitPromptAnchor && prompt && !prompt.classList.contains('d-none')) {
+        positionShrineVisitPrompt(activeVisitPromptAnchor);
+      }
     });
   }
 

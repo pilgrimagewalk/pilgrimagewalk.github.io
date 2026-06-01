@@ -1,0 +1,97 @@
+{
+  "pilgrimage_title": "Peregrinación",
+  "pilgrimage_p1": "Hola, soy Enda... Estoy caminando por Europa por antiguos caminos de peregrinación y visitando algunos santuarios marianos por el camino.",
+  "pilgrimage_p2": "Vivo de forma sencilla y me quedo en campings o albergues de peregrinos. Mientras camino, me gusta disfrutar de la naturaleza y dedicar la peregrinación a todas las personas con mala salud.",
+  "buy_me_a_coffee": "Invítame a un café",
+  "view_current_location": "Ver mapa en vivo",
+  "european_marian_network_heading": "Red Mariana Europea",
+  "on_the_road_heading": "En el Camino",
+  "footer_tagline": "Senderos antiguos y santuarios marianos...",
+  "masthead_title": "Peregrinación a pie europea",
+  "support_title": "Apoyo",
+  "shrine_panel_placeholder": "Click a shrine on the map to view information.",
+  "shrine_panel_visit_site": "Visitar",
+  "shrine_01_name": "Knock",
+  "shrine_01_info1": "En una tarde lluviosa de 1879, unos vecinos vieron una aparición de la Virgen junto al muro de una iglesia.",
+  "shrine_01_info2": "No se pronunció ninguna palabra, pero este pequeño pueblo se convirtió en lugar de peregrinación y esperanza.",
+
+  "shrine_02_name": "Walsingham",
+  "shrine_02_info1": "Según la tradición, una noble inglesa recibió en el siglo XI una visión de la casa de María en Nazaret.",
+  "shrine_02_info2": "La Santa Casa construida aquí, en la campiña de Norfolk, llegó a ser un gran centro de peregrinación medieval.",
+
+  "shrine_03_name": "Banneux",
+  "shrine_03_info1": "En 1933, Mariette Beco contó haber visto a la Virgen junto a una fuente en un jardín.",
+  "shrine_03_info2": "Las aguas de Banneux crean un ambiente tranquilo entre las colinas del este de Bélgica.",
+
+  "shrine_04_name": "Lourdes",
+  "shrine_04_info1": "En 1858, Bernadette Soubirous relató varias apariciones de la Virgen en la gruta de Massabielle.",
+  "shrine_04_info2": "Desde entonces, generaciones de peregrinos enfermos y heridos han buscado aquí consuelo y esperanza.",
+
+  "shrine_05_name": "Zaragoza",
+  "shrine_05_info1": "En una basílica junto al río se conserva un pilar de jaspe que, según la tradición, dejó la Virgen.",
+  "shrine_05_info2": "Se dice que María apareció aquí a Santiago mientras aún vivía en Jerusalén.",
+
+  "shrine_06_name": "Fátima",
+  "shrine_06_info1": "En 1917, tres niños pastores dijeron haber visto apariciones de la Virgen cerca de Aljustrel.",
+  "shrine_06_info2": "Cada noche, miles de peregrinos se reúnen con velas en este gran santuario.",
+
+  "shrine_07_name": "Gibraltar",
+  "shrine_07_info1": "El santuario de Nuestra Señora de Europa se alza en el Peñón de Gibraltar, entre Atlántico y Mediterráneo.",
+  "shrine_07_info2": "Durante siglos, los marineros se detuvieron aquí para rezar antes de cruzar entre continentes.",
+
+  "shrine_08_name": "Loreto",
+  "shrine_08_info1": "Frente al Adriático se encuentra la Santa Casa de Nazaret, ligada a la Anunciación.",
+  "shrine_08_info2": "La tradición dice que fue llevada aquí desde Nazaret durante la Edad Media.",
+
+  "shrine_09_name": "Mellieħa",
+  "shrine_09_info1": "En la costa norte de Malta, capillas iluminadas por velas y pasajes de piedra bajan hacia el mar.",
+  "shrine_09_info2": "La tradición une Mellieħa con los primeros cristianos y con una visita de san Lucas a la cueva.",
+
+  "shrine_10_name": "Einsiedeln",
+  "shrine_10_info1": "En los Alpes suizos, una imagen de la Virgen Negra es venerada en la Capilla de Gracia.",
+  "shrine_10_info2": "Desde hace mil años, los peregrinos visitan esta abadía donde los monjes aún rezan bajo techos pintados.",
+
+  "shrine_11_name": "Altötting",
+  "shrine_11_info1": "La pequeña capilla octogonal de Altötting guarda una venerada imagen de la Virgen.",
+  "shrine_11_info2": "Sus muros están cubiertos de testimonios de curación y gratitud dejados por peregrinos.",
+
+  "shrine_12_name": "Mariazell",
+  "shrine_12_info1": "La leyenda cuenta que un monje rezó aquí cuando una roca bloqueó su camino.",
+  "shrine_12_info2": "La roca se abrió y la pequeña estatua de madera pasó a ser el corazón de Mariazell.",
+
+  "shrine_13_name": "Brezje",
+  "shrine_13_info1": "A los pies de los Alpes Julianos se encuentra el principal santuario de peregrinación de Eslovenia.",
+  "shrine_13_info2": "En 1883, un incendio dañó gran parte de la iglesia, pero la imagen de María Auxiliadora quedó intacta.",
+
+  "shrine_14_name": "Marija Bistrica",
+  "shrine_14_info1": "El santuario es conocido por su Virgen Negra, escondida durante siglos en tiempos de invasiones.",
+  "shrine_14_info2": "Tras ser redescubierta, Marija Bistrica se convirtió en el principal lugar de peregrinación de Croacia.",
+
+  "shrine_15_name": "Máriapócs",
+  "shrine_15_info1": "Esta basílica greco-católica del este de Hungría suele llenarse de incienso y cantos.",
+  "shrine_15_info2": "Se hizo famosa en el siglo XVII cuando una imagen de María habría derramado lágrimas.",
+
+  "shrine_16_name": "Mátraverebély",
+  "shrine_16_info1": "Según la tradición, una fuente comenzó a brotar aquí tras una curación milagrosa hace siglos.",
+  "shrine_16_info2": "Hoy, senderos entre bosques conducen a los peregrinos hasta este manantial sagrado.",
+
+  "shrine_17_name": "Levoča",
+  "shrine_17_info1": "Cada julio, multitudes suben a la Colina Mariana sobre esta ciudad medieval eslovaca.",
+  "shrine_17_info2": "Los peregrinos suben aquí desde el siglo XIII, cuando la población buscó refugio de las invasiones mongolas.",
+
+  "shrine_18_name": "Csíksomlyó",
+  "shrine_18_info1": "Cada Pentecostés, peregrinos cruzan las montañas de Transilvania para reunirse en este santuario al aire libre.",
+  "shrine_18_info2": "En el centro del santuario se encuentra una famosa estatua tallada de la Virgen María.",
+
+  "shrine_19_name": "Częstochowa",
+  "shrine_19_info1": "La imagen de la Virgen Negra, marcada por cicatrices y siglos de historia, es símbolo de esperanza para Polonia.",
+  "shrine_19_info2": "Cada verano, miles de peregrinos caminan hacia el monasterio llevando flores, estandartes y oraciones.",
+
+  "shrine_20_name": "Vilnius",
+  "shrine_20_info1": "Sobre una antigua puerta de la ciudad vieja se encuentra el santuario de Nuestra Señora de la Aurora.",
+  "shrine_20_info2": "Durante siglos, las oraciones y las velas han llenado esta pequeña capilla sobre las calles antiguas.",
+
+  "shrine_21_name": "Zarvanytsia",
+  "shrine_21_info1": "Según la tradición, un monje que huía de una invasión encontró un icono de María bajo unos árboles.",
+  "shrine_21_info2": "Hoy, los peregrinos recorren caminos del oeste de Ucrania para llegar a las aguas sagradas de este santuario."
+}

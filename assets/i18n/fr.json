@@ -1,0 +1,97 @@
+{
+  "pilgrimage_title": "Pèlerinage",
+  "pilgrimage_p1": "Bonjour, Enda ici... Je marche à travers l’Europe sur d’anciens chemins de pèlerinage et je visite quelques sanctuaires mariaux en route.",
+  "pilgrimage_p2": "Je vis simplement et je reste dans des campings ou des hébergements pour pèlerins. En marchant, j’aime profiter de la nature et dédier ce pèlerinage à toutes les personnes en mauvaise santé.",
+  "buy_me_a_coffee": "Offre-moi un café",
+  "view_current_location": "Voir la carte",
+  "european_marian_network_heading": "Réseau marial européen",
+  "on_the_road_heading": "En route",
+  "footer_tagline": "Chemins anciens & sanctuaires marials...",
+  "masthead_title": "Pèlerinage pédestre européen",
+  "support_title": "Soutien",
+  "shrine_panel_placeholder": "Click a shrine on the map to view information.",
+  "shrine_panel_visit_site": "Visiter",
+  "shrine_01_name": "Knock",
+  "shrine_01_info1": "Par une soirée pluvieuse en 1879, des villageois virent une apparition de la Vierge près du mur de l’église.",
+  "shrine_01_info2": "Aucune parole ne fut prononcée mais ce petit village devint un lieu de pèlerinage plein d’espoir et de paix.",
+
+  "shrine_02_name": "Walsingham",
+  "shrine_02_info1": "Selon la tradition, une noble anglaise reçut au XIe siècle une vision de la maison de Marie à Nazareth.",
+  "shrine_02_info2": "La Sainte Maison construite dans la campagne du Norfolk devint un grand lieu de pèlerinage médiéval.",
+
+  "shrine_03_name": "Banneux",
+  "shrine_03_info1": "En 1933, Mariette Beco rapporta une apparition de la Vierge près d’une source dans un jardin.",
+  "shrine_03_info2": "Les eaux paisibles de Banneux donnent au sanctuaire une atmosphère calme au cœur des collines belges.",
+
+  "shrine_04_name": "Lourdes",
+  "shrine_04_info1": "En 1858, Bernadette Soubirous rapporta plusieurs apparitions de la Vierge dans la grotte de Massabielle.",
+  "shrine_04_info2": "Depuis, des générations de pèlerins viennent chercher guérison, réconfort et espérance auprès des eaux saintes.",
+
+  "shrine_05_name": "Saragosse",
+  "shrine_05_info1": "Dans la basilique au bord du fleuve se trouve un pilier de jaspe que la Vierge aurait laissé derrière elle.",
+  "shrine_05_info2": "Selon la tradition, Marie apparut ici à saint Jacques alors qu’elle vivait encore à Jérusalem.",
+
+  "shrine_06_name": "Fátima",
+  "shrine_06_info1": "En 1917, trois jeunes bergers rapportèrent des apparitions de la Vierge près du village d’Aljustrel.",
+  "shrine_06_info2": "Chaque soir, des milliers de pèlerins se rassemblent avec des bougies dans ce vaste sanctuaire.",
+
+  "shrine_07_name": "Gibraltar",
+  "shrine_07_info1": "Le sanctuaire de Notre-Dame d’Europe se dresse sur le rocher de Gibraltar, entre Atlantique et Méditerranée.",
+  "shrine_07_info2": "Depuis des siècles, les marins viennent y prier avant de traverser cette porte entre deux continents.",
+
+  "shrine_08_name": "Loreto",
+  "shrine_08_info1": "Au bord de l’Adriatique se trouve la Sainte Maison de Nazareth, liée à l’Annonciation.",
+  "shrine_08_info2": "La tradition raconte qu’elle fut transportée ici depuis Nazareth au Moyen Âge.",
+
+  "shrine_09_name": "Mellieħa",
+  "shrine_09_info1": "Sur la côte nord de Malte, des chapelles éclairées aux bougies descendent vers la mer.",
+  "shrine_09_info2": "La tradition relie Mellieħa aux premiers chrétiens et certains pensent que saint Luc visita cette grotte.",
+
+  "shrine_10_name": "Einsiedeln",
+  "shrine_10_info1": "Au cœur des Alpes suisses, la chapelle de Grâce abrite une célèbre Vierge noire en bois.",
+  "shrine_10_info2": "Depuis mille ans, des pèlerins visitent cette abbaye où les moines prient encore sous les plafonds peints.",
+
+  "shrine_11_name": "Altötting",
+  "shrine_11_info1": "La petite chapelle octogonale d’Altötting abrite une image très vénérée de la Vierge.",
+  "shrine_11_info2": "Ses murs sont couverts de témoignages de guérisons et de remerciements laissés par les pèlerins.",
+
+  "shrine_12_name": "Mariazell",
+  "shrine_12_info1": "La légende raconte qu’un moine pria ici lorsqu’un rocher bloqua son chemin.",
+  "shrine_12_info2": "Le rocher se fendit et la petite statue de Marie devint le cœur du sanctuaire de Mariazell.",
+
+  "shrine_13_name": "Brezje",
+  "shrine_13_info1": "Au pied des Alpes juliennes se trouve le principal lieu de pèlerinage de Slovénie.",
+  "shrine_13_info2": "En 1883, un incendie endommagea l’église mais l’image de Marie Auxiliatrice resta intacte.",
+
+  "shrine_14_name": "Marija Bistrica",
+  "shrine_14_info1": "Le sanctuaire est connu pour sa Vierge noire cachée pendant des siècles lors des invasions.",
+  "shrine_14_info2": "Après sa redécouverte, Marija Bistrica devint le grand lieu de pèlerinage de Croatie.",
+
+  "shrine_15_name": "Máriapócs",
+  "shrine_15_info1": "Cette basilique gréco-catholique des plaines hongroises résonne souvent de chants et d’encens.",
+  "shrine_15_info2": "Elle devint célèbre au XVIIe siècle lorsqu’une icône de Marie aurait versé des larmes.",
+
+  "shrine_16_name": "Mátraverebély",
+  "shrine_16_info1": "Selon la tradition, une source jaillit ici après une guérison miraculeuse il y a plusieurs siècles.",
+  "shrine_16_info2": "Aujourd’hui, des sentiers forestiers conduisent les visiteurs vers cette source sacrée du nord de la Hongrie.",
+
+  "shrine_17_name": "Levoča",
+  "shrine_17_info1": "Chaque juillet, des foules montent vers la colline mariale dominant cette ville médiévale.",
+  "shrine_17_info2": "Les pèlerins gravissent cette colline depuis le XIIIe siècle, après les invasions mongoles.",
+
+  "shrine_18_name": "Csíksomlyó",
+  "shrine_18_info1": "À chaque Pentecôte, des pèlerins traversent les montagnes de Transylvanie pour rejoindre ce sanctuaire.",
+  "shrine_18_info2": "Au cœur du sanctuaire se trouve une célèbre statue sculptée de la Vierge Marie.",
+
+  "shrine_19_name": "Częstochowa",
+  "shrine_19_info1": "L’image de la Vierge noire, marquée par les siècles, est un symbole d’espérance pour la Pologne.",
+  "shrine_19_info2": "Chaque été, des milliers de pèlerins marchent vers le monastère avec bannières, fleurs et prières.",
+
+  "shrine_20_name": "Vilnius",
+  "shrine_20_info1": "Au-dessus d’une ancienne porte se trouve le sanctuaire de Notre-Dame de l’Aurore.",
+  "shrine_20_info2": "Depuis des siècles, prières et bougies remplissent cette petite chapelle dominant la vieille ville.",
+
+  "shrine_21_name": "Zarvanytsia",
+  "shrine_21_info1": "Selon la tradition, un moine trouva une icône de Marie après s’être endormi sous des arbres.",
+  "shrine_21_info2": "Aujourd’hui, des pèlerins parcourent l’ouest de l’Ukraine pour rejoindre les eaux de ce sanctuaire."
+}

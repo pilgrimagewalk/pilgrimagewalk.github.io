@@ -1,0 +1,97 @@
+{
+  "pilgrimage_title": "Pielgrzymka",
+  "pilgrimage_p1": "Cześć, tu Enda... Wędruję po Europie dawnymi szlakami pielgrzymkowymi i po drodze odwiedzam niektóre sanktuaria maryjne.",
+  "pilgrimage_p2": "Żyję prosto i zatrzymuję się na kempingach lub w schroniskach pielgrzymich. Podczas wędrówki lubię cieszyć się naturą i ofiarowuję tę pielgrzymkę wszystkim osobom o słabym zdrowiu.",
+  "buy_me_a_coffee": "Postaw mi kawę",
+  "view_current_location": "Zobacz mapę na żywo",
+  "european_marian_network_heading": "Europejska Sieć Maryjna",
+  "on_the_road_heading": "W drodze",
+  "footer_tagline": "Dawne szlaki i sanktuaria maryjne...",
+  "masthead_title": "Europejska piesza pielgrzymka",
+  "support_title": "Wsparcie",
+  "shrine_panel_placeholder": "Click a shrine on the map to view information.",
+  "shrine_panel_visit_site": "Odwiedź",
+  "shrine_01_name": "Knock",
+  "shrine_01_info1": "Pewnego deszczowego wieczoru w 1879 roku mieszkańcy zobaczyli objawienie Matki Bożej przy murze kościoła.",
+  "shrine_01_info2": "Nie padły żadne słowa, ale ta mała wioska stała się miejscem nadziei i pielgrzymek.",
+
+  "shrine_02_name": "Walsingham",
+  "shrine_02_info1": "Według tradycji angielska szlachcianka miała w XI wieku wizję domu Maryi w Nazarecie.",
+  "shrine_02_info2": "Święty Domek zbudowany tutaj stał się jednym z wielkich średniowiecznych miejsc pielgrzymkowych Europy.",
+
+  "shrine_03_name": "Banneux",
+  "shrine_03_info1": "W 1933 roku Mariette Beco opowiedziała o objawieniu Matki Bożej przy źródle w ogrodzie.",
+  "shrine_03_info2": "Płynące wody nadają Banneux spokojną atmosferę pośród wzgórz wschodniej Belgii.",
+
+  "shrine_04_name": "Lourdes",
+  "shrine_04_info1": "W 1858 roku Bernadetta Soubirous opisała objawienia Matki Bożej w grocie Massabielle.",
+  "shrine_04_info2": "Od tamtej pory pokolenia pielgrzymów przybywają tutaj w poszukiwaniu uzdrowienia i nadziei.",
+
+  "shrine_05_name": "Saragossa",
+  "shrine_05_info1": "W bazylice nad rzeką znajduje się kolumna z jaspisu, którą według tradycji pozostawiła Maryja.",
+  "shrine_05_info2": "Według tradycji Maryja ukazała się tutaj św. Jakubowi jeszcze za życia w Jerozolimie.",
+
+  "shrine_06_name": "Fátima",
+  "shrine_06_info1": "W 1917 roku troje dzieci pasterskich opowiedziało o objawieniach Matki Bożej koło Aljustrel.",
+  "shrine_06_info2": "Każdego wieczoru tysiące pielgrzymów gromadzą się tutaj ze świecami.",
+
+  "shrine_07_name": "Gibraltar",
+  "shrine_07_info1": "Sanktuarium Matki Bożej Europy stoi na Skale Gibraltarskiej między Atlantykiem a Morzem Śródziemnym.",
+  "shrine_07_info2": "Od wieków marynarze zatrzymywali się tutaj na modlitwę przed dalszą podróżą.",
+
+  "shrine_08_name": "Loreto",
+  "shrine_08_info1": "Nad Adriatykiem znajduje się Święty Domek z Nazaretu związany ze Zwiastowaniem.",
+  "shrine_08_info2": "Legenda mówi, że został przeniesiony tutaj z Nazaretu w średniowieczu.",
+
+  "shrine_09_name": "Mellieħa",
+  "shrine_09_info1": "Na północnym wybrzeżu Malty kaplice pełne świec i kamienne przejścia prowadzą ku morzu.",
+  "shrine_09_info2": "Tradycja łączy Mellieħę z pierwszymi chrześcijanami i wizytą św. Łukasza.",
+
+  "shrine_10_name": "Einsiedeln",
+  "shrine_10_info1": "W sercu Alp Szwajcarskich czczona jest drewniana figura Czarnej Madonny.",
+  "shrine_10_info2": "Od tysiąca lat pielgrzymi przybywają tutaj, gdzie mnisi wciąż modlą się pod malowanymi sufitami.",
+
+  "shrine_11_name": "Altötting",
+  "shrine_11_info1": "Mała ośmiokątna kaplica w Altötting skrywa czczony wizerunek Matki Bożej.",
+  "shrine_11_info2": "Jej ściany pokrywają świadectwa uzdrowień i wdzięczności pozostawione przez pielgrzymów.",
+
+  "shrine_12_name": "Mariazell",
+  "shrine_12_info1": "Legenda opowiada o mnichu, który modlił się tutaj, gdy skała zagrodziła mu drogę.",
+  "shrine_12_info2": "Skała rozstąpiła się, a mała drewniana figura stała się sercem sanktuarium Mariazell.",
+
+  "shrine_13_name": "Brezje",
+  "shrine_13_info1": "U stóp Alp Julijskich znajduje się najważniejsze miejsce pielgrzymkowe Słowenii.",
+  "shrine_13_info2": "W 1883 roku pożar uszkodził kościół, ale obraz Maryi Wspomożycielki pozostał nienaruszony.",
+
+  "shrine_14_name": "Marija Bistrica",
+  "shrine_14_info1": "Sanktuarium słynie z figury Czarnej Madonny ukrywanej przez wieki podczas wojen i najazdów.",
+  "shrine_14_info2": "Po jej odnalezieniu Marija Bistrica stała się głównym miejscem pielgrzymkowym Chorwacji.",
+
+  "shrine_15_name": "Máriapócs",
+  "shrine_15_info1": "Ta greckokatolicka bazylika na wschodzie Węgier często wypełnia się śpiewem i kadzidłem.",
+  "shrine_15_info2": "Stała się sławna w XVII wieku, gdy ikona Maryi miała zapłakać łzami.",
+
+  "shrine_16_name": "Mátraverebély",
+  "shrine_16_info1": "Według tradycji źródło zaczęło tutaj bić po cudownym uzdrowieniu wiele wieków temu.",
+  "shrine_16_info2": "Dziś leśne ścieżki prowadzą pielgrzymów do tego świętego źródła na północy Węgier.",
+
+  "shrine_17_name": "Levoča",
+  "shrine_17_info1": "Każdego lipca tłumy pielgrzymów gromadzą się na Wzgórzu Maryjnym nad tym średniowiecznym miastem.",
+  "shrine_17_info2": "Pielgrzymi wchodzą tutaj od XIII wieku, gdy mieszkańcy szukali schronienia przed Mongołami.",
+
+  "shrine_18_name": "Csíksomlyó",
+  "shrine_18_info1": "W Zielone Świątki pielgrzymi przekraczają góry Siedmiogrodu, by dotrzeć do tego sanktuarium pod gołym niebem.",
+  "shrine_18_info2": "W centrum sanktuarium znajduje się słynna rzeźbiona figura Matki Bożej.",
+
+  "shrine_19_name": "Częstochowa",
+  "shrine_19_info1": "Obraz Czarnej Madonny, naznaczony bliznami i historią wieków, jest symbolem nadziei dla Polski.",
+  "shrine_19_info2": "Każdego lata tysiące pielgrzymów idą do klasztoru z kwiatami, sztandarami i modlitwą.",
+
+  "shrine_20_name": "Wilno",
+  "shrine_20_info1": "Nad starą bramą miejską znajduje się sanktuarium Matki Bożej Ostrobramskiej.",
+  "shrine_20_info2": "Od wieków modlitwy i światło świec wypełniają małą kaplicę nad ulicami starego miasta.",
+
+  "shrine_21_name": "Zarvanytsia",
+  "shrine_21_info1": "Według tradycji uciekający mnich odnalazł ikonę Maryi pod drzewami.",
+  "shrine_21_info2": "Dziś pielgrzymi podążają drogami zachodniej Ukrainy do uzdrawiających wód tego sanktuarium."
+}

@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+
+<!--
+    To test language translations locally, use:
+    <html lang="en" data-test-lang="fr"> etc
+
+    cs - Czech         lt - Lithuanian
+    da - Danish        mt - Maltese
+    de - German        nl - Dutch
+    el - Greek         pl - Polish
+    en - English       pt - Portuguese
+    es - Spanish       ro - Romanian
+    fr - French        sk - Slovak
+    hr - Croatian      sl - Slovenian
+    hu - Hungarian     sv - Swedish
+    it - Italian       uk - Ukrainian
+    bg - Bulgarian     sr - Serbian
+
+    et - Estonian
+    fi - Finnish
+    lv - Latvian
+    no - Norwegian
+    tr - Turkish
+-->
+
+<!-- TEST LANGUAGE (temporary)-->
+<!-- <html lang="en" data-test-lang="hu"> -->
+
+<!-- ENGLISH DEFAULT -->
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <link rel="canonical" href="https://pilgrimagewalk.eu/">
+        <meta name="author" content="Enda F" />
+        <meta name="description" content="A personal walking pilgrimage across
+        Europe, visiting the great Marian shrines along ancient pilgrim paths." />
+
+        <title>European Pilgrimage</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+
+        <!-- Fontello icon font CSS -->
+        <link href="css/fontello.css" rel="stylesheet">
+
+    </head>
+
+
+    <body id="page-top">
+
+        <header class="masthead text-left text-white">
+            <div class="container px-4 px-lg-5">
+                <div class="masthead-panel earthy-img">
+                    <div class="masthead-content"></div>
+                </div>
+            </div>
+        </header>
+
+        <section id="About" class="pt-4 pb-5">
+        <div class="container px-4 px-lg-5">
+        <h2 class="section-intro-title text-center mb-4" data-i18n="masthead_title">European Walking Pilgrimage</h2>
+        <div class="row gx-4 align-items-stretch">
+
+
+        <div class="col-4 col-md-3">
+            <div class="portrait-card h-100 rounded shadow overflow-hidden">
+            <img
+                src="/assets/img/portrait.jpg"
+                alt="Portrait"
+                class="portrait-image w-100 h-100 earthy-img"
+                style="object-fit: cover;"
+            />
+            </div>
+        </div>
+
+
+        <div class="col-8 col-md-9">
+            <div class="ratio ratio-4x3 rounded overflow-hidden border shadow position-relative bg-light" id="mapPlaceholder">
+                <img
+                    src="/assets/img/map-preview.webp"
+                    alt="Preview of the pilgrimage route map"
+                    class="ratio-item"
+                    style="object-fit: cover;"
+                    loading="lazy"
+                    decoding="async"
+                >
+            </div>
+
+            <div
+                class="ratio ratio-4x3 rounded overflow-hidden border shadow d-none position-relative bg-light"
+                id="mapFrameWrap"
+            >
+            <iframe
+                title="Pilgrimage route map"
+                id="mapFrame"
+                class="google-map-filter"
+                data-src="https://www.google.com/maps/d/u/1/embed?mid=129433ybTJqXHOs-b_ZfS3I4_tRbnLVk&ehbc=2E312F"
+                style="border:0;"
+                allowfullscreen
+                loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"
+            ></iframe>
+
+            <div
+                id="mapLoadingIndicator"
+                class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column align-items-center justify-content-center bg-light"
+                aria-live="polite"
+                aria-label="Loading map"
+                style="z-index: 1;"
+            >
+                <div class="spinner-border text-primary mb-2" role="status" aria-hidden="true"></div>
+                <span>Loading map...</span>
+            </div>
+            </div>
+
+        </div>
+        </div>
+        </div>
+        </section>
+
+
+
+        <section id="Background" class="py-3">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-5 align-items-stretch pilgrimage-intro">
+
+                    <div class="col-md-7">
+                        <div class="p-1 pilgrimage-intro-image-wrap">
+                            <!-- <img class="img-fluid rounded pilgrimage-intro-image earthy-img" src="assets/img/shrine.jpg" alt="Shrine on the pilgrimage route" /> -->
+                            <img class="img-fluid rounded earthy-img" src="assets/img/shrine.jpg" alt="Shrine on the pilgrimage route" />
+                        </div>
+                    </div>
+
+                    <div class="col-md-5 d-flex align-items-center">
+                        <div class="pilgrimage-intro-copy">
+                            <h3 class="display-4" data-i18n="pilgrimage_title">Pilgrimage</h3>
+                            <p data-i18n="pilgrimage_p1"> </p>
+                            <p data-i18n="pilgrimage_p2"> </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+<section id="shrines" class="py-5">
+  <div class="container px-4 px-lg-5">
+    <h2 class="display-4 text-center mb-5" data-i18n="european_marian_network_heading">
+      European Marian Network
+    </h2>
+
+    <div class="row align-items-stretch mb-3">
+      <!-- Left Column: Info Panel Sidebar -->
+      <div class="col-12 col-md-4 mb-2 mb-md-0">
+        <div id="shrinePanel" class="card shrine-panel" aria-live="polite">
+          <div class="card-body">
+            <a id="shrinePanelBtn" href="#" target="_blank" rel="noopener noreferrer" class="d-flex align-items-center gap-2 mb-3 shrine-visit-link d-none">
+              <div class="d-flex align-items-center gap-2 flex-grow-1 min-w-0">
+                <img id="shrinePanelFlag" src="" class="rounded d-none" style="width:28px; height:auto;" alt="">
+                <h3 id="shrinePanelTitle" class="h5 mb-0">Shrine Info</h3>
+              </div>
+              <svg class="shrine-visit-icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                <path d="M10.5 1.5h4v4h-1.5V4.06l-5.72 5.72-1.06-1.06 5.72-5.72H10.5V1.5Z"></path>
+                <path d="M13.5 13.5h-11v-11h5V1h-6a.5.5 0 0 0-.5.5v13a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-6h-1.5v5.5Z"></path>
+              </svg>
+            </a>
+
+            <img id="shrinePanelImg" src="" class="img-fluid rounded d-none mb-3" alt="">
+
+            <p id="shrinePanelInfo1" class="mb-0">Click a shrine to view information.</p>
+            <p id="shrinePanelInfo2" class="mt-0 mb-1 d-none"></p>
+
+            <button id="shrinePanelNext" type="button" class="shrine-panel-next" aria-label="Next shrine">
+              <span aria-hidden="true">→</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Map -->
+      <div class="col-12 col-md-8">
+        <div class="shrines-map-card">
+          <div class="shrines-map-wrap">
+            <img src="assets/img/basemap.jpg"
+                 alt="European Marian Network Map"
+                 class="shrines-map-img shadow earthy-img"
+                 style="background: #f8f9fa;">
+            <a class="map-marker" data-shrine="01" href="#"
+               style="top: 8.86%; left: 5.00%;" aria-label="01. Knock">
+              <span class="map-marker-num">Knock</span>
+            </a>
+            <a class="map-marker" data-shrine="02" href="#"
+               style="top: 14.34%; left: 28.9%;" aria-label="02. Walsingham">
+              <span class="map-marker-num">Walsingham</span>
+            </a>
+            <a class="map-marker" data-shrine="03" href="#"
+               style="top: 27.57%; left: 41.20%;" aria-label="03. Banneux">
+              <span class="map-marker-num">Banneux</span>
+            </a>
+            <a class="map-marker" data-shrine="04" href="#"
+               style="top: 65.51%; left: 27.00%;" aria-label="04. Lourdes">
+              <span class="map-marker-num">Lourdes</span>
+            </a>
+            <a class="map-marker" data-shrine="05" href="#"
+               style="top: 72.20%; left: 24.78%;" aria-label="05. Zaragoza">
+              <span class="map-marker-num">Zaragoza</span>
+            </a>
+            <a class="map-marker" data-shrine="06" href="#"
+               style="top: 81.21%; left: 5.70%;" aria-label="06. Fátima">
+              <span class="map-marker-num">Fátima</span>
+            </a>
+            <a class="map-marker" data-shrine="07" href="#"
+               style="top: 97.0%; left: 13.4%;" aria-label="07. Gibraltar">
+              <span class="map-marker-num">Gibraltar</span>
+            </a>
+            <a class="map-marker" data-shrine="08" href="#"
+               style="top: 63.70%; left: 60.80%;" aria-label="08. Loreto">
+              <span class="map-marker-num">Loreto</span>
+            </a>
+            <a class="map-marker" data-shrine="09" href="#"
+               style="top: 97.57%; left: 62.51%;" aria-label="09. Mellieħa">
+              <span class="map-marker-num">Mellieħa</span>
+            </a>
+            <a class="map-marker" data-shrine="10" href="#"
+               style="top: 45.31%; left: 48.80%;" aria-label="10. Einsiedeln">
+              <span class="map-marker-num">Einsiedeln</span>
+            </a>
+            <a class="map-marker" data-shrine="11" href="#"
+               style="top: 39.93%; left: 58.20%;" aria-label="11. Altötting">
+              <span class="map-marker-num">Altötting</span>
+            </a>
+            <a class="map-marker" data-shrine="12" href="#"
+               style="top: 42.20%; left: 64.80%;" aria-label="12. Mariazell">
+              <span class="map-marker-num">Mariazell</span>
+            </a>
+            <a class="map-marker" data-shrine="13" href="#"
+               style="top: 49.79%; left: 62.00%;" aria-label="13. Brezje">
+              <span class="map-marker-num">Brezje</span>
+            </a>
+            <a class="map-marker" data-shrine="14" href="#"
+               style="top: 51.30%; left: 66.90%;" aria-label="14. Marija Bistrica">
+              <span class="map-marker-num">Marija Bistrica</span>
+            </a>
+            <a class="map-marker" data-shrine="15" href="#"
+               style="top: 42.25%; left: 81.00%;" aria-label="15. Máriapócs">
+              <span class="map-marker-num">Máriapócs</span>
+            </a>
+            <a class="map-marker" data-shrine="16" href="#"
+               style="top: 41.30%; left: 75.70%;" aria-label="16. Mátraverebély">
+              <span class="map-marker-num">Mátraverebély</span>
+            </a>
+            <a class="map-marker" data-shrine="17" href="#"
+               style="top: 35.90%; left: 77.60%;" aria-label="17. Levoča">
+              <span class="map-marker-num">Levoča</span>
+            </a>
+            <a class="map-marker" data-shrine="18" href="#"
+               style="top: 49.80%; left: 91.00%;" aria-label="18. Csíksomlyó">
+              <span class="map-marker-num">Csíksomlyó</span>
+            </a>
+            <a class="map-marker" data-shrine="19" href="#"
+               style="top: 26.18%; left: 73.93%;" aria-label="19. Częstochowa">
+              <span class="map-marker-num">Częstochowa</span>
+            </a>
+            <a class="map-marker" data-shrine="20" href="#"
+               style="top: 3.83%; left: 89.92%;" aria-label="20. Vilnius">
+              <span class="map-marker-num">Vilnius</span>
+            </a>
+            <a class="map-marker" data-shrine="21" href="#"
+               style="top: 34.88%; left: 90.50%;" aria-label="21. Zarvanytsia">
+              <span class="map-marker-num">Zarvanytsia</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Chips row below the map/panel area -->
+    <div class="row">
+      <div class="col-12">
+        <div id="shrineSiteList" class="shrine-sites-list shrine-sites-panel" aria-label="Shrine website links"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section id="walking" class="walking-section">
+        <div class="container px-4 px-lg-5">
+            <h2 class="display-4 text-center mb-4" data-i18n="on_the_road_heading">On the Road</h2>
+            <div class="row gx-3">
+            <div class="col-4">
+                <div class="ratio ratio-1x1 mb-3 walking-photo-card">
+                <img
+                    src="assets/img/walking-1.jpg"
+                    alt="Walking pilgrimage view"
+                    class="img-fluid rounded shadow earthy-img"
+                    style="object-fit: cover;"
+                />
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="ratio ratio-1x1 mb-3 walking-photo-card">
+                <img
+                    src="assets/img/walking-2.jpg"
+                    alt="Pilgrim route scene"
+                    class="img-fluid rounded shadow earthy-img"
+                    style="object-fit: cover;"
+                />
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="ratio ratio-1x1 mb-3 walking-photo-card">
+                <img
+                    src="assets/img/walking-3.jpg"
+                    alt="Pilgrimage on the road"
+                    class="img-fluid rounded shadow earthy-img"
+                    style="object-fit: cover;"
+                />
+                </div>
+            </div>
+            </div>
+        </div>
+        </section>
+
+
+
+        <footer class="site-footer py-4">
+        <div class="container px-4 px-lg-5">
+            <div class="site-footer-panel">
+            <div class="row g-1 align-items-center">
+            <div class="col-md-auto">
+                <a href="https://revolut.me/farrelle"
+                target="_blank" rel="noopener noreferrer"
+                class="revolut-link"
+                aria-label="Support via Revolut (opens Revolut link)">
+                <img src="/assets/img/Revolut-tag-darkgray.jpg"
+                    alt="Revolut QR code"
+                    class="revolut-qr">
+                </a>
+
+            </div>
+
+            <div class="col text-md-start">
+                <p class="footer-title mb-2" data-i18n="masthead_title">European Pilgrimage</p>
+                <p class="footer-text mb-2" data-i18n="footer_tagline">Walking ancient paths &amp; visiting Marian shrines</p>
+                <p class="footer-meta mb-1"> <a href="mailto:pilgrimagewalk@gmail.com">pilgrimagewalk@gmail.com</a> </p>
+            </div>
+
+
+            <div class="col-md-4 col-lg-3 text-md-end footer-support">
+                <p class="footer-title mb-2" data-i18n="support_title">Support</p>
+                <!-- <a href="https://ko-fi.com/V7V01RJ83L" -->
+                <a href="https://ko-fi.com/pilgrimagewalk"
+                target="_blank" rel="noopener noreferrer"
+                class="kofi-link rounded-pill"
+                aria-label="Support via Ko-fi">
+                <span class="kofi-icon" aria-hidden="true">☕</span>
+                <span data-i18n="buy_me_a_coffee">Buy me a coffee</span>
+                <span class="external-link-icon" aria-hidden="true">↗</span>
+                </a>
+            </div>
+
+
+            </div>
+            </div>
+        </div>
+        </footer>
+
+
+        <!-- Core theme JS -->
+        <script src="js/scripts.js"></script>
+
+
+    </body>
+</html>

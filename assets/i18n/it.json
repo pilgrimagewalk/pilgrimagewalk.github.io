@@ -1,0 +1,97 @@
+{
+  "pilgrimage_title": "Pellegrinaggio",
+  "pilgrimage_p1": "Ciao, Enda qui... Sto camminando in Europa lungo antichi cammini di pellegrinaggio e visitando alcuni santuari mariani lungo il percorso.",
+  "pilgrimage_p2": "Vivo in modo semplice e soggiorno in campeggi o rifugi per pellegrini. Durante il cammino mi piace godermi la natura e dedicare il pellegrinaggio a tutte le persone con problemi di salute.",
+  "buy_me_a_coffee": "Offrimi un caffè",
+  "view_current_location": "Visualizza mappa",
+  "european_marian_network_heading": "Rete Mariana Europea",
+  "on_the_road_heading": "In cammino",
+  "footer_tagline": "Sentieri antichi e santuari mariani...",
+  "masthead_title": "Pellegrinaggio a piedi europeo",
+  "support_title": "Supporto",
+  "shrine_panel_placeholder": "Click a shrine on the map to view information.",
+  "shrine_panel_visit_site": "Visita",
+  "shrine_01_name": "Knock",
+  "shrine_01_info1": "In una sera piovosa del 1879, alcuni abitanti videro un’apparizione della Madonna accanto al muro della chiesa.",
+  "shrine_01_info2": "Non furono pronunciate parole, ma questo piccolo villaggio divenne luogo di speranza e pellegrinaggio.",
+
+  "shrine_02_name": "Walsingham",
+  "shrine_02_info1": "Secondo la tradizione, una nobildonna inglese ebbe nell’XI secolo una visione della casa di Maria a Nazareth.",
+  "shrine_02_info2": "La Santa Casa costruita nella campagna del Norfolk divenne una delle grandi mete di pellegrinaggio medievali.",
+
+  "shrine_03_name": "Banneux",
+  "shrine_03_info1": "Nel 1933, Mariette Beco raccontò di aver visto la Madonna presso una sorgente in giardino.",
+  "shrine_03_info2": "Le acque di Banneux donano al santuario un’atmosfera tranquilla tra le colline del Belgio orientale.",
+
+  "shrine_04_name": "Lourdes",
+  "shrine_04_info1": "Nel 1858, Bernadette Soubirous raccontò varie apparizioni della Madonna nella grotta di Massabielle.",
+  "shrine_04_info2": "Da allora, generazioni di pellegrini malati e feriti sono venute qui in cerca di speranza e guarigione.",
+
+  "shrine_05_name": "Saragozza",
+  "shrine_05_info1": "In una basilica sul fiume si conserva un pilastro di diaspro che, secondo la tradizione, fu lasciato dalla Madonna.",
+  "shrine_05_info2": "Si racconta che Maria apparve qui a san Giacomo mentre viveva ancora a Gerusalemme.",
+
+  "shrine_06_name": "Fátima",
+  "shrine_06_info1": "Nel 1917, tre pastorelli dissero di aver visto apparizioni della Madonna vicino al villaggio di Aljustrel.",
+  "shrine_06_info2": "Ogni sera migliaia di pellegrini si radunano con le candele in questo grande santuario.",
+
+  "shrine_07_name": "Gibilterra",
+  "shrine_07_info1": "Il santuario di Nostra Signora d’Europa si trova sulla Rocca di Gibilterra, tra Atlantico e Mediterraneo.",
+  "shrine_07_info2": "Per secoli i marinai si sono fermati qui a pregare prima di attraversare il mare tra due continenti.",
+
+  "shrine_08_name": "Loreto",
+  "shrine_08_info1": "Affacciata sull’Adriatico si trova la Santa Casa di Nazareth, legata all’Annunciazione.",
+  "shrine_08_info2": "La tradizione racconta che fu portata qui da Nazareth durante il Medioevo.",
+
+  "shrine_09_name": "Mellieħa",
+  "shrine_09_info1": "Sulla costa nord di Malta, cappelle illuminate da candele e passaggi di pietra scendono verso il mare.",
+  "shrine_09_info2": "La tradizione collega Mellieħa ai primi cristiani e a una visita di san Luca alla grotta.",
+
+  "shrine_10_name": "Einsiedeln",
+  "shrine_10_info1": "Nel cuore delle Alpi svizzere, una Madonna Nera in legno è venerata nella Cappella delle Grazie.",
+  "shrine_10_info2": "Da mille anni i pellegrini arrivano qui, dove i monaci pregano ancora sotto soffitti dipinti.",
+
+  "shrine_11_name": "Altötting",
+  "shrine_11_info1": "La piccola cappella ottagonale di Altötting custodisce una venerata immagine della Madonna.",
+  "shrine_11_info2": "Le sue pareti sono coperte di testimonianze di guarigione e gratitudine lasciate dai pellegrini.",
+
+  "shrine_12_name": "Mariazell",
+  "shrine_12_info1": "La leggenda racconta di un monaco che pregò qui quando una roccia bloccò il suo cammino.",
+  "shrine_12_info2": "La roccia si aprì e la piccola statua di legno divenne il cuore del santuario di Mariazell.",
+
+  "shrine_13_name": "Brezje",
+  "shrine_13_info1": "Ai piedi delle Alpi Giulie si trova il più importante santuario di pellegrinaggio della Slovenia.",
+  "shrine_13_info2": "Nel 1883 un incendio danneggiò la chiesa, ma l’immagine di Maria Ausiliatrice rimase intatta.",
+
+  "shrine_14_name": "Marija Bistrica",
+  "shrine_14_info1": "Il santuario è noto per la sua Madonna Nera, nascosta per secoli durante invasioni e guerre.",
+  "shrine_14_info2": "Dopo la sua riscoperta, Marija Bistrica divenne il principale luogo di pellegrinaggio della Croazia.",
+
+  "shrine_15_name": "Máriapócs",
+  "shrine_15_info1": "Questa basilica greco-cattolica dell’Ungheria orientale è spesso piena di incenso e canti.",
+  "shrine_15_info2": "Divenne famosa nel XVII secolo quando un’icona della Madonna avrebbe versato lacrime.",
+
+  "shrine_16_name": "Mátraverebély",
+  "shrine_16_info1": "Secondo la tradizione, una sorgente iniziò a scorrere qui dopo una guarigione miracolosa avvenuta secoli fa.",
+  "shrine_16_info2": "Oggi sentieri nei boschi conducono i pellegrini verso questa fonte sacra dell’Ungheria settentrionale.",
+
+  "shrine_17_name": "Levoča",
+  "shrine_17_info1": "Ogni luglio, folle di pellegrini salgono sulla Collina Mariana sopra questa città medievale slovacca.",
+  "shrine_17_info2": "I pellegrini salgono qui dal XIII secolo, quando la popolazione cercò rifugio dalle invasioni mongole.",
+
+  "shrine_18_name": "Csíksomlyó",
+  "shrine_18_info1": "A Pentecoste, i pellegrini attraversano le montagne della Transilvania per raggiungere questo santuario all’aperto.",
+  "shrine_18_info2": "Al centro del santuario si trova una celebre statua scolpita della Vergine Maria.",
+
+  "shrine_19_name": "Częstochowa",
+  "shrine_19_info1": "L’immagine della Madonna Nera, segnata dal tempo e dalla storia, è simbolo di speranza per la Polonia.",
+  "shrine_19_info2": "Ogni estate migliaia di pellegrini camminano verso il monastero con fiori, stendardi e preghiere.",
+
+  "shrine_20_name": "Vilnius",
+  "shrine_20_info1": "Sopra un’antica porta della città si trova il santuario della Madonna dell’Aurora.",
+  "shrine_20_info2": "Da secoli, preghiere e candele illuminano questa piccola cappella sopra le vie della città vecchia.",
+
+  "shrine_21_name": "Zarvanytsia",
+  "shrine_21_info1": "Secondo la tradizione, un monaco in fuga trovò un’icona della Madonna sotto alcuni alberi.",
+  "shrine_21_info2": "Oggi i pellegrini percorrono i sentieri dell’Ucraina occidentale verso le acque sacre di questo santuario."
+}

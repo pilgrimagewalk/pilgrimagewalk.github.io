@@ -1,0 +1,170 @@
+{
+  "01": {
+    "id": "01",
+    "url": "https://www.knockshrine.ie/",
+    "flag": "assets/img/flags/ie.webp",
+    "country": "Ireland",
+    "fallbackName": "Knock",
+    "photo": "assets/img/shrines/01-Knock.jpg"
+  },
+  "02": {
+    "id": "02",
+    "url": "https://www.walsingham.org.uk",
+    "flag": "assets/img/flags/gb.webp",
+    "country": "United Kingdom",
+    "fallbackName": "Walsingham",
+    "photo": "assets/img/shrines/02-Walsingham.jpg"
+  },
+  "03": {
+    "id": "03",
+    "url": "https://www.banneux-nd.be",
+    "flag": "assets/img/flags/be.webp",
+    "country": "Belgium",
+    "fallbackName": "Banneux",
+    "photo": "assets/img/shrines/03-Banneux.jpg"
+  },
+  "04": {
+    "id": "04",
+    "url": "https://www.lourdes-france.org",
+    "flag": "assets/img/flags/fr.webp",
+    "country": "France",
+    "fallbackName": "Lourdes",
+    "photo": "assets/img/shrines/04-Lourdes.jpg"
+  },
+  "05": {
+    "id": "05",
+    "url": "https://catedraldezaragoza.es",
+    "flag": "assets/img/flags/es.webp",
+    "country": "Spain",
+    "fallbackName": "Zaragoza",
+    "photo": "assets/img/shrines/05-Zaragoza.jpg"
+  },
+  "06": {
+    "id": "06",
+    "url": "https://www.fatima.pt",
+    "flag": "assets/img/flags/pt.webp",
+    "country": "Portugal",
+    "fallbackName": "Fátima",
+    "photo": "assets/img/shrines/06-Fatima.jpg"
+  },
+  "07": {
+    "id": "07",
+    "url": "https://www.ourladyofeurope.net",
+    "flag": "assets/img/flags/gi.webp",
+    "country": "Gibraltar",
+    "fallbackName": "Gibraltar",
+    "photo": "assets/img/shrines/07-Gibraltar.jpg"
+  },
+  "08": {
+    "id": "08",
+    "url": "https://www.santuarioloreto.va/it.html",
+    "flag": "assets/img/flags/it.webp",
+    "country": "Italy",
+    "fallbackName": "Loreto",
+    "photo": "assets/img/shrines/08-Loreto.jpg"
+  },
+  "09": {
+    "id": "09",
+    "url": "https://www.mellieha.com",
+    "flag": "assets/img/flags/mt.webp",
+    "country": "Malta",
+    "fallbackName": "Mellieħa",
+    "photo": "assets/img/shrines/09-Mellieha.jpg"
+  },
+  "10": {
+    "id": "10",
+    "url": "https://www.kloster-einsiedeln.ch",
+    "flag": "assets/img/flags/ch.webp",
+    "country": "Switzerland",
+    "fallbackName": "Einsiedeln",
+    "photo": "assets/img/shrines/10-Einsiedeln.jpg"
+  },
+  "11": {
+    "id": "11",
+    "url": "https://www.gnadenort-altoetting.de/",
+    "flag": "assets/img/flags/de.webp",
+    "country": "Germany",
+    "fallbackName": "Altötting",
+    "photo": "assets/img/shrines/11-Altotting.jpg"
+  },
+  "12": {
+    "id": "12",
+    "url": "https://www.basilika-mariazell.at",
+    "flag": "assets/img/flags/at.webp",
+    "country": "Austria",
+    "fallbackName": "Mariazell",
+    "photo": "assets/img/shrines/12-Mariazell.jpg"
+  },
+  "13": {
+    "id": "13",
+    "url": "https://www.marija.si",
+    "flag": "assets/img/flags/si.webp",
+    "country": "Slovenia",
+    "fallbackName": "Brezje",
+    "photo": "assets/img/shrines/13-Brezje.jpg"
+  },
+  "14": {
+    "id": "14",
+    "url": "https://www.marija-bistrica.hr",
+    "flag": "assets/img/flags/hr.webp",
+    "country": "Croatia",
+    "fallbackName": "Marija Bistrica",
+    "photo": "assets/img/shrines/14-Marija-Bistrica.jpg"
+  },
+  "15": {
+    "id": "15",
+    "url": "https://www.bucsujaras.hu/mariapocs",
+    "flag": "assets/img/flags/hu.webp",
+    "country": "Hungary",
+    "fallbackName": "Máriapócs",
+    "photo": "assets/img/shrines/15-Mariapocs.jpg"
+  },
+  "16": {
+    "id": "16",
+    "url": "https://szentkut.hu",
+    "flag": "assets/img/flags/hu.webp",
+    "country": "Hungary",
+    "fallbackName": "Mátraverebély",
+    "photo": "assets/img/shrines/16-Matraverebely.jpg"
+  },
+  "17": {
+    "id": "17",
+    "url": "https://www.levoca.sk",
+    "flag": "assets/img/flags/sk.webp",
+    "country": "Slovakia",
+    "fallbackName": "Levoča",
+    "photo": "assets/img/shrines/17-Levoca.jpg"
+  },
+  "18": {
+    "id": "18",
+    "url": "https://www.csiksomlyo.ro",
+    "flag": "assets/img/flags/ro.webp",
+    "country": "Romania",
+    "fallbackName": "Csíksomlyó",
+    "photo": "assets/img/shrines/18-Csiksomlyo.jpg"
+  },
+  "19": {
+    "id": "19",
+    "url": "https://www.jasnagora.pl",
+    "flag": "assets/img/flags/pl.webp",
+    "country": "Poland",
+    "fallbackName": "Częstochowa",
+    "photo": "assets/img/shrines/19-Czestochowa.jpg"
+  },
+  "20": {
+    "id": "20",
+    "url": "https://www.ausrosvartai.lt",
+    "flag": "assets/img/flags/lt.webp",
+    "country": "Lithuania",
+    "fallbackName": "Vilnius",
+    "photo": "assets/img/shrines/20-Vilnius.jpg"
+  },
+  "21": {
+    "id": "21",
+    "url": "https://en.wikipedia.org/wiki/Zarvanytsia",
+    "flag": "assets/img/flags/ua.webp",
+    "country": "Ukraine",
+    "fallbackName": "Zarvanytsia",
+    "photo": "assets/img/shrines/21-Zarvanytsia.jpg"
+  }
+}

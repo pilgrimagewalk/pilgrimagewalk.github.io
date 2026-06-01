@@ -1,0 +1,97 @@
+{
+  "pilgrimage_title": "Púť",
+  "pilgrimage_p1": "Ahoj, tu Enda... Kráčam po Európe po starobylých pútnických cestách a cestou navštevujem niektoré mariánske svätyne.",
+  "pilgrimage_p2": "Žijem jednoducho a zostávam v kempoch alebo pútnických útulkoch. Počas chôdze si rád užívam prírodu a túto púť venujem všetkým ľuďom so slabým zdravím.",
+  "buy_me_a_coffee": "Kúp mi kávu",
+  "view_current_location": "Zobraziť živú mapu",
+  "european_marian_network_heading": "Európska mariánska sieť",
+  "on_the_road_heading": "Na ceste",
+  "footer_tagline": "Starobylé chodníky a mariánske svätyne...",
+  "masthead_title": "Európska pešia púť",
+  "support_title": "Podpora",
+  "shrine_panel_placeholder": "Click a shrine on the map to view information.",
+  "shrine_panel_visit_site": "Navštíviť",
+  "shrine_01_name": "Knock",
+  "shrine_01_info1": "Počas daždivého večera v roku 1879 videli miestni obyvatelia zjavenie Panny Márie pri múre kostola.",
+  "shrine_01_info2": "Nezazneli žiadne slová, no táto malá dedina sa stala miestom nádeje a pútní.",
+
+  "shrine_02_name": "Walsingham",
+  "shrine_02_info1": "Podľa tradície mala anglická šľachtičná v 11. storočí víziu domu Panny Márie v Nazarete.",
+  "shrine_02_info2": "Svätý dom postavený v kraji Norfolk sa stal jedným z veľkých pútnických miest Európy.",
+
+  "shrine_03_name": "Banneux",
+  "shrine_03_info1": "V roku 1933 opísala Mariette Beco zjavenie Panny Márie pri záhradnom prameni.",
+  "shrine_03_info2": "Tečúca voda dodáva Banneux pokojnú atmosféru medzi kopcami východného Belgicka.",
+
+  "shrine_04_name": "Lourdes",
+  "shrine_04_info1": "V roku 1858 opísala Bernadeta Soubirous viacero zjavení Panny Márie v jaskyni Massabielle.",
+  "shrine_04_info2": "Odvtedy sem prichádzajú generácie pútnikov hľadať uzdravenie, nádej a pokoj.",
+
+  "shrine_05_name": "Zaragoza",
+  "shrine_05_info1": "V bazilike pri rieke stojí jaspisový stĺp, ktorý tam podľa tradície zanechala Panna Mária.",
+  "shrine_05_info2": "Tradícia hovorí, že sa tu Mária zjavila svätému Jakubovi ešte za života v Jeruzaleme.",
+
+  "shrine_06_name": "Fátima",
+  "shrine_06_info1": "V roku 1917 tri pastierske deti rozprávali o zjaveniach Panny Márie pri dedine Aljustrel.",
+  "shrine_06_info2": "Každý večer sa tu tisíce pútnikov stretávajú so sviecami v tomto veľkom pútnom areáli.",
+
+  "shrine_07_name": "Gibraltár",
+  "shrine_07_info1": "Svätyňa Panny Márie Európskej stojí na Gibraltárskej skale medzi Atlantikom a Stredozemným morom.",
+  "shrine_07_info2": "Po stáročia sa tu námorníci zastavovali na modlitbu pred ďalšou cestou.",
+
+  "shrine_08_name": "Loreto",
+  "shrine_08_info1": "Nad Jadranským morom stojí Svätý dom z Nazareta spojený so Zvestovaním.",
+  "shrine_08_info2": "Legenda hovorí, že bol v stredoveku prenesený sem z Nazareta.",
+
+  "shrine_09_name": "Mellieħa",
+  "shrine_09_info1": "Na severnom pobreží Malty vedú kaplnky osvetlené sviecami a kamenné chodby k moru.",
+  "shrine_09_info2": "Tradícia spája Mellieħu s prvými kresťanmi a návštevou svätého Lukáša.",
+
+  "shrine_10_name": "Einsiedeln",
+  "shrine_10_info1": "Hlboko vo švajčiarskych Alpách je v Kaplnke milosti uctievaná drevená Čierna Madona.",
+  "shrine_10_info2": "Už tisíc rokov sem prichádzajú pútnici, zatiaľ čo mnísi sa tu stále modlia pod maľovanými stropmi.",
+
+  "shrine_11_name": "Altötting",
+  "shrine_11_info1": "Malá osemuholníková kaplnka v Altöttingu ukrýva uctievaný obraz Panny Márie.",
+  "shrine_11_info2": "Jej steny pokrývajú svedectvá o uzdravení a vďačnosti zanechané pútnikmi.",
+
+  "shrine_12_name": "Mariazell",
+  "shrine_12_info1": "Legenda hovorí o mníchovi, ktorý sa tu modlil, keď mu cestu zablokovala skala.",
+  "shrine_12_info2": "Skala sa otvorila a malá drevená socha sa stala srdcom Mariazellu.",
+
+  "shrine_13_name": "Brezje",
+  "shrine_13_info1": "Pod Julskými Alpami leží najvýznamnejšie pútnické miesto Slovinska.",
+  "shrine_13_info2": "V roku 1883 poškodil kostol požiar, ale obraz Márie Pomocnice kresťanov zostal nepoškodený.",
+
+  "shrine_14_name": "Marija Bistrica",
+  "shrine_14_info1": "Svätyňa je známa svojou Čiernou Madonou, ktorá bola stáročia ukrývaná počas vojen a nepokojov.",
+  "shrine_14_info2": "Po znovuobjavení sa Marija Bistrica stala hlavným pútnickým miestom Chorvátska.",
+
+  "shrine_15_name": "Máriapócs",
+  "shrine_15_info1": "Táto gréckokatolícka bazilika na východe Maďarska býva plná kadidla a spevu.",
+  "shrine_15_info2": "Preslávila sa v 17. storočí, keď ikona Panny Márie údajne ronila slzy.",
+
+  "shrine_16_name": "Mátraverebély",
+  "shrine_16_info1": "Podľa tradície tu po zázračnom uzdravení pred stáročiami začal vyvierať prameň.",
+  "shrine_16_info2": "Dnes vedú lesné chodníky pútnikov k tomuto posvätnému prameňu na severe Maďarska.",
+
+  "shrine_17_name": "Levoča",
+  "shrine_17_info1": "Každý júl sa na Mariánskej hore nad týmto stredovekým mestom stretávajú tisíce pútnikov.",
+  "shrine_17_info2": "Pútnici sem vystupujú už od 13. storočia, keď tu ľudia hľadali útočisko pred Mongolmi.",
+
+  "shrine_18_name": "Csíksomlyó",
+  "shrine_18_info1": "Na Turíce putujú pútnici cez hory Sedmohradska k tejto svätyni pod otvoreným nebom.",
+  "shrine_18_info2": "V srdci svätyne stojí známa vyrezávaná socha Panny Márie.",
+
+  "shrine_19_name": "Częstochowa",
+  "shrine_19_info1": "Obraz Čiernej Madony poznačený storočiami dejín je symbolom nádeje pre Poľsko.",
+  "shrine_19_info2": "Každé leto putujú tisíce pútnikov ku kláštoru s kvetmi, zástavami a modlitbami.",
+
+  "shrine_20_name": "Vilnius",
+  "shrine_20_info1": "Nad starou mestskou bránou sa nachádza svätyňa Panny Márie Ostrobramskej.",
+  "shrine_20_info2": "Po stáročia napĺňajú malú kaplnku nad ulicami starého mesta modlitby a svetlo sviec.",
+
+  "shrine_21_name": "Zarvanytsia",
+  "shrine_21_info1": "Podľa tradície našiel mních utekajúci pred vpádom pod stromami ikonu Panny Márie.",
+  "shrine_21_info2": "Dnes pútnici putujú cestami západnej Ukrajiny k liečivým vodám tejto svätyne."
+}

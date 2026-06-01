@@ -1,0 +1,13 @@
+            <a class="map-marker" data-shrine="01" href="https://www.knockshrine.ie/" target="_blank" rel="noopener noreferrer"
+               style="top: 8.86%; left: 5.00%;" aria-label="01. Knock">
+              <span class="map-marker-num">Knock</span>
+            </a>
+            <a class="map-marker" data-shrine="02" href="https://www.walsingham.org.uk" target="_blank" rel="noopener noreferrer"
+               style="top: 14.34%; left: 28.9%;" aria-label="02. Walsingham">
+              <span class="map-marker-num">Walsingham</span>
+            </a>
+            <a class="map-marker" data-shrine="03" href="https://www.banneux-nd.be" target="_blank" rel="noopener noreferrer"
+               style="top: 27.57%; left: 41.20%;" aria-label="03. Banneux">
+              <span class="map-marker-num">Banneux</span>
+            </a>
+

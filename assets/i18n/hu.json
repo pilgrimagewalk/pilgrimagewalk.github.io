@@ -1,0 +1,97 @@
+{
+  "pilgrimage_title": "Zarándoklat",
+  "pilgrimage_p1": "Szia, Enda vagyok... Európában járok ősi zarándokutakon, és útközben néhány Mária-kegyhelyet is felkeresek.",
+  "pilgrimage_p2": "Egyszerűen élek, kempingekben vagy zarándokszállásokon szállok meg. Gyaloglás közben szeretek a természetben lenni, és ezt a zarándoklatot minden rossz egészségi állapotban élő emberért ajánlom fel.",
+  "buy_me_a_coffee": "Vegyél nekem egy kávét",
+  "view_current_location": "Élő térkép megtekintése",
+  "european_marian_network_heading": "Európai Mária-hálózat",
+  "on_the_road_heading": "Úton",
+  "footer_tagline": "Ősi ösvények és Mária-kegyhelyek...",
+  "masthead_title": "Európai gyalogos zarándoklat",
+  "support_title": "Támogatás",
+  "shrine_panel_placeholder": "Click a shrine on the map to view information.",
+  "shrine_panel_visit_site": "Látogasd meg",
+  "shrine_01_name": "Knock",
+  "shrine_01_info1": "Egy esős estén 1879-ben a falubeliek a Szűzanya jelenését látták a templom fala mellett.",
+  "shrine_01_info2": "Nem hangzott el egy szó sem, mégis ez a kis falu a remény és a zarándoklat helyévé vált.",
+
+  "shrine_02_name": "Walsingham",
+  "shrine_02_info1": "A hagyomány szerint egy angol nemesasszony a 11. században látomást kapott Mária názáreti házáról.",
+  "shrine_02_info2": "A norfolki vidéken felépített Szent Ház Európa egyik nagy középkori zarándokhelye lett.",
+
+  "shrine_03_name": "Banneux",
+  "shrine_03_info1": "1933-ban Mariette Beco a Szűzanya jelenéséről számolt be egy kerti forrásnál.",
+  "shrine_03_info2": "A forrás vize nyugodt hangulatot ad Banneux-nak Belgium keleti dombjai között.",
+
+  "shrine_04_name": "Lourdes",
+  "shrine_04_info1": "1858-ban Bernadette Soubirous több jelenésről számolt be a massabielle-i barlangnál.",
+  "shrine_04_info2": "Azóta zarándokok generációi érkeznek ide gyógyulást, vigaszt és reményt keresve.",
+
+  "shrine_05_name": "Zaragoza",
+  "shrine_05_info1": "A folyóparti bazilikában egy jáspisoszlop áll, amelyet a hagyomány szerint Mária hagyott hátra.",
+  "shrine_05_info2": "A hagyomány szerint Mária még jeruzsálemi élete idején jelent meg itt Szent Jakabnak.",
+
+  "shrine_06_name": "Fátima",
+  "shrine_06_info1": "1917-ben három pásztorgyermek számolt be Mária-jelenésekről Aljustrel közelében.",
+  "shrine_06_info2": "Minden este ezrek gyűlnek össze gyertyákkal ebben a hatalmas kegyhelyben.",
+
+  "shrine_07_name": "Gibraltár",
+  "shrine_07_info1": "Az Európai Miasszonyunk kegyhelye a Gibraltári-sziklán áll, az Atlanti-óceán és a Földközi-tenger között.",
+  "shrine_07_info2": "A tengerészek évszázadokon át itt álltak meg imádkozni útjuk előtt.",
+
+  "shrine_08_name": "Loreto",
+  "shrine_08_info1": "Az Adria fölött áll a názáreti Szent Ház, amely az Angyali üdvözlethez kapcsolódik.",
+  "shrine_08_info2": "A legenda szerint a középkorban Nazaretből hozták ide.",
+
+  "shrine_09_name": "Mellieħa",
+  "shrine_09_info1": "Málta északi partján gyertyafényes kápolnák és kőfolyosók vezetnek a tenger felé.",
+  "shrine_09_info2": "A hagyomány Mellieħát az első keresztényekhez és Szent Lukácshoz kapcsolja.",
+
+  "shrine_10_name": "Einsiedeln",
+  "shrine_10_info1": "A svájci Alpok mélyén egy Fekete Madonna szobrot tisztelnek a Kegykápolnában.",
+  "shrine_10_info2": "Ezer éve érkeznek ide zarándokok, miközben a szerzetesek ma is festett mennyezetek alatt imádkoznak.",
+
+  "shrine_11_name": "Altötting",
+  "shrine_11_info1": "Altötting kis nyolcszögletű kápolnája a Szűzanya tisztelt képét őrzi.",
+  "shrine_11_info2": "Falait évszázadok zarándokainak gyógyulásról és háláról szóló emlékei borítják.",
+
+  "shrine_12_name": "Mariazell",
+  "shrine_12_info1": "A legenda szerint egy szerzetes itt imádkozott, amikor egy szikla elzárta az útját.",
+  "shrine_12_info2": "A szikla megnyílt, és a kis faszobor Mariazell szívévé vált.",
+
+  "shrine_13_name": "Brezje",
+  "shrine_13_info1": "A Júliai-Alpok alatt található Szlovénia legfontosabb zarándokhelye.",
+  "shrine_13_info2": "1883-ban tűz rongálta meg a templomot, de a Keresztények Segítsége Mária-kép sértetlen maradt.",
+
+  "shrine_14_name": "Marija Bistrica",
+  "shrine_14_info1": "A kegyhely a Fekete Madonna szobráról ismert, amelyet évszázadokon át rejtegettek háborúk idején.",
+  "shrine_14_info2": "Újrafelfedezése után Marija Bistrica Horvátország legfontosabb zarándokhelye lett.",
+
+  "shrine_15_name": "Máriapócs",
+  "shrine_15_info1": "Ez a görögkatolikus bazilika Kelet-Magyarországon gyakran telik meg tömjénnel és énekkel.",
+  "shrine_15_info2": "A 17. században vált híressé, amikor a Mária-ikon állítólag könnyeket hullatott.",
+
+  "shrine_16_name": "Mátraverebély",
+  "shrine_16_info1": "A hagyomány szerint egy csodás gyógyulás után évszázadokkal ezelőtt forrás fakadt itt.",
+  "shrine_16_info2": "Ma erdei ösvények vezetnek a zarándokokhoz ehhez a szent kúthoz Észak-Magyarországon.",
+
+  "shrine_17_name": "Levoča",
+  "shrine_17_info1": "Minden júliusban tömegek gyűlnek össze a középkori város fölötti Mária-hegyen.",
+  "shrine_17_info2": "A zarándokok a 13. század óta járnak ide, amikor a helyiek a mongol támadások elől kerestek menedéket.",
+
+  "shrine_18_name": "Csíksomlyó",
+  "shrine_18_info1": "Pünkösdkor zarándokok kelnek át Erdély hegyein, hogy eljussanak ehhez a szabadtéri kegyhelyhez.",
+  "shrine_18_info2": "A kegyhely központjában egy híres faragott Mária-szobor áll.",
+
+  "shrine_19_name": "Częstochowa",
+  "shrine_19_info1": "A Fekete Madonna képe, amelyet évszázadok történelme és sebei jelölnek, a remény jelképe Lengyelország számára.",
+  "shrine_19_info2": "Minden nyáron zarándokok ezrei indulnak zászlókkal, virágokkal és imákkal a kolostor felé.",
+
+  "shrine_20_name": "Vilnius",
+  "shrine_20_info1": "Az óváros egyik régi kapuja fölött áll a Hajnal Kapuja Boldogasszonyának kegyhelye.",
+  "shrine_20_info2": "Évszázadok óta imák és gyertyafény töltik meg az utcák fölé emelkedő kis kápolnát.",
+
+  "shrine_21_name": "Zarvanytsia",
+  "shrine_21_info1": "A hagyomány szerint egy menekülő szerzetes fák alatt találta meg Mária ikonját.",
+  "shrine_21_info2": "Ma zarándokok járják Nyugat-Ukrajna útjait, hogy elérjék e kegyhely gyógyító vizeit."
+}

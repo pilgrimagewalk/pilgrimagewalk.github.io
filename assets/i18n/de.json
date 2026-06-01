@@ -1,0 +1,97 @@
+{
+  "pilgrimage_title": "Pilgerreise",
+  "pilgrimage_p1": "Hallo, Enda hier... Ich wandere auf alten Pilgerwegen durch Europa und besuche unterwegs einige Marienheiligtümer.",
+  "pilgrimage_p2": "Ich lebe einfach und übernachte auf Campingplätzen oder in Pilgerunterkünften. Beim Gehen genieße ich die Natur und widme die Pilgerreise allen Menschen mit gesundheitlichen Problemen.",
+  "buy_me_a_coffee": "Kauf mir einen Kaffee",
+  "view_current_location": "Live-Karte anzeigen",
+  "european_marian_network_heading": "Europäisches marianisches Netzwerk",
+  "on_the_road_heading": "Unterwegs",
+  "footer_tagline": "Alte Wege & Marienheiligtümer...",
+  "masthead_title": "Europäische Pilgerwanderung",
+  "support_title": "Unterstützen",
+  "shrine_panel_placeholder": "Click a shrine on the map to view information.",
+  "shrine_panel_visit_site": "Besuch",
+  "shrine_01_name": "Knock",
+  "shrine_01_info1": "An einem regnerischen Abend im Jahr 1879 sahen Dorfbewohner eine Erscheinung der Muttergottes neben einer Kirchenmauer.",
+  "shrine_01_info2": "Es wurden keine Worte gesprochen, doch das kleine Dorf wurde zu einem Ort der Hoffnung und des Friedens.",
+
+  "shrine_02_name": "Walsingham",
+  "shrine_02_info1": "Der Überlieferung nach hatte eine englische Adlige im 11. Jahrhundert eine Vision vom Haus Marias in Nazareth.",
+  "shrine_02_info2": "Das Heilige Haus in der Landschaft von Norfolk wurde zu einem der großen Pilgerziele Europas.",
+
+  "shrine_03_name": "Banneux",
+  "shrine_03_info1": "1933 berichtete Mariette Beco von einer Erscheinung der Muttergottes an einer Quelle im Garten.",
+  "shrine_03_info2": "Die fließenden Wasser verleihen Banneux eine ruhige Atmosphäre in den Hügeln Ostbelgiens.",
+
+  "shrine_04_name": "Lourdes",
+  "shrine_04_info1": "1858 berichtete Bernadette Soubirous von mehreren Erscheinungen der Muttergottes in der Grotte von Massabielle.",
+  "shrine_04_info2": "Seitdem kommen Generationen von Pilgern hierher, um Heilung, Trost und Hoffnung zu suchen.",
+
+  "shrine_05_name": "Saragossa",
+  "shrine_05_info1": "In einer Basilika am Fluss steht eine Jaspissäule, die der Überlieferung nach von Maria zurückgelassen wurde.",
+  "shrine_05_info2": "Der Tradition nach erschien Maria hier dem heiligen Jakobus, als sie noch in Jerusalem lebte.",
+
+  "shrine_06_name": "Fátima",
+  "shrine_06_info1": "1917 berichteten drei Hirtenkinder von Erscheinungen der Muttergottes nahe dem Dorf Aljustrel.",
+  "shrine_06_info2": "Jeden Abend versammeln sich Tausende mit Kerzen in diesem großen Heiligtum.",
+
+  "shrine_07_name": "Gibraltar",
+  "shrine_07_info1": "Das Heiligtum Unserer Lieben Frau von Europa steht auf dem Felsen von Gibraltar zwischen Atlantik und Mittelmeer.",
+  "shrine_07_info2": "Seit Jahrhunderten halten Seeleute hier an, um vor der Reise zwischen den Kontinenten zu beten.",
+
+  "shrine_08_name": "Loreto",
+  "shrine_08_info1": "Mit Blick auf die Adria steht das Heilige Haus von Nazareth, verbunden mit der Verkündigung.",
+  "shrine_08_info2": "Der Legende nach wurde es im Mittelalter von Nazareth hierher gebracht.",
+
+  "shrine_09_name": "Mellieħa",
+  "shrine_09_info1": "An Maltas Nordküste führen kerzenbeleuchtete Kapellen und steinerne Gänge hinunter zum Meer.",
+  "shrine_09_info2": "Die Tradition verbindet Mellieħa mit den ersten Christen und einem Besuch des heiligen Lukas.",
+
+  "shrine_10_name": "Einsiedeln",
+  "shrine_10_info1": "Tief in den Schweizer Alpen wird in der Gnadenkapelle eine Schwarze Madonna aus Holz verehrt.",
+  "shrine_10_info2": "Seit tausend Jahren pilgern Menschen hierher, wo Mönche noch heute unter bemalten Decken beten.",
+
+  "shrine_11_name": "Altötting",
+  "shrine_11_info1": "Die kleine achteckige Kapelle von Altötting bewahrt ein verehrtes Marienbild.",
+  "shrine_11_info2": "Ihre Wände sind voller Zeugnisse von Heilung und Dankbarkeit aus vielen Jahrhunderten.",
+
+  "shrine_12_name": "Mariazell",
+  "shrine_12_info1": "Der Legende nach betete hier ein Mönch mit einer Marienstatue, als ein Felsen seinen Weg versperrte.",
+  "shrine_12_info2": "Der Felsen öffnete sich und die kleine Holzstatue wurde zum Herzen von Mariazell.",
+
+  "shrine_13_name": "Brezje",
+  "shrine_13_info1": "Am Fuß der Julischen Alpen liegt Sloweniens wichtigster Wallfahrtsort.",
+  "shrine_13_info2": "1883 beschädigte ein Feuer die Kirche, doch das Bild Mariens Hilfe der Christen blieb unversehrt.",
+
+  "shrine_14_name": "Marija Bistrica",
+  "shrine_14_info1": "Das Heiligtum ist bekannt für seine Schwarze Madonna, die während Zeiten von Krieg und Unruhen versteckt wurde.",
+  "shrine_14_info2": "Nach ihrer Wiederentdeckung wurde Marija Bistrica Kroatiens bedeutendster Pilgerort.",
+
+  "shrine_15_name": "Máriapócs",
+  "shrine_15_info1": "Diese griechisch-katholische Basilika im Osten Ungarns ist oft voller Weihrauch und Gesang.",
+  "shrine_15_info2": "Berühmt wurde sie im 17. Jahrhundert, als eine Marienikone Tränen vergossen haben soll.",
+
+  "shrine_16_name": "Mátraverebély",
+  "shrine_16_info1": "Der Überlieferung nach begann hier nach einer wunderbaren Heilung vor vielen Jahrhunderten eine Quelle zu fließen.",
+  "shrine_16_info2": "Heute führen Waldwege durch die Hügel Nordungarns zu dieser heiligen Quelle.",
+
+  "shrine_17_name": "Levoča",
+  "shrine_17_info1": "Jeden Juli versammeln sich Pilger auf dem Marienberg über dieser mittelalterlichen Stadt.",
+  "shrine_17_info2": "Seit dem 13. Jahrhundert steigen Pilger hier hinauf, seit die Menschen Schutz vor den Mongolen suchten.",
+
+  "shrine_18_name": "Csíksomlyó",
+  "shrine_18_info1": "Zu Pfingsten ziehen Pilger durch die Berge Siebenbürgens zu diesem Freiluftheiligtum.",
+  "shrine_18_info2": "Im Mittelpunkt des Heiligtums steht eine berühmte geschnitzte Marienstatue.",
+
+  "shrine_19_name": "Częstochowa",
+  "shrine_19_info1": "Das Bild der Schwarzen Madonna mit seinen Narben und Jahrhunderten Geschichte ist ein Hoffnungszeichen für Polen.",
+  "shrine_19_info2": "Jeden Sommer pilgern Tausende mit Fahnen, Blumen und Gebeten zum befestigten Kloster.",
+
+  "shrine_20_name": "Vilnius",
+  "shrine_20_info1": "Über einem alten Stadttor befindet sich das Heiligtum Unserer Lieben Frau vom Tor der Morgenröte.",
+  "shrine_20_info2": "Seit Jahrhunderten erfüllen Gebete und Kerzenlicht die kleine Kapelle über den Straßen der Altstadt.",
+
+  "shrine_21_name": "Zarvanytsia",
+  "shrine_21_info1": "Der Überlieferung nach fand ein fliehender Mönch unter Bäumen eine Marienikone.",
+  "shrine_21_info2": "Heute folgen Pilger den Wegen der Westukraine zu den heilenden Wassern dieses Heiligtums."
+}
